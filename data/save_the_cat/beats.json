@@ -1,0 +1,79 @@
+{
+    "beats": [
+        {
+            "name": "Opening Image",
+            "description": "A snapshot of the hero's world before the journey begins. This should visually represent the theme and tone of the story.",
+            "page_number": 1
+        },
+        {
+            "name": "Setup",
+            "description": "Introduces the hero's world, their normal life, and hints at their internal problem. Shows what needs to change.",
+            "page_number": 1
+        },
+        {
+            "name": "Theme Stated",
+            "description": "Someone (usually not the hero) states the theme of the movie, often in dialogue. This is what the hero needs to learn.",
+            "page_number": 5
+        },
+        {
+            "name": "Catalyst",
+            "description": "An event that breaks the hero's normal world and sets the story in motion. The hero can't return to their old life.",
+            "page_number": 12
+        },
+        {
+            "name": "Debate",
+            "description": "The hero hesitates to take action, weighing the risks and rewards of the journey ahead.",
+            "page_number": 12
+        },
+        {
+            "name": "Break into Two",
+            "description": "The hero makes a decision and commits to the journey, leaving their old world behind.",
+            "page_number": 25
+        },
+        {
+            "name": "B Story",
+            "description": "A subplot that often involves the hero's emotional journey or a love interest. Provides a break from the main plot.",
+            "page_number": 30
+        },
+        {
+            "name": "Fun and Games",
+            "description": "The main section of Act Two where the hero faces challenges and experiences the new world. Often contains the movie's most entertaining scenes.",
+            "page_number": 30
+        },
+        {
+            "name": "Midpoint",
+            "description": "A major event that raises the stakes and often involves a false victory or false defeat. The hero's goal becomes clearer.",
+            "page_number": 55
+        },
+        {
+            "name": "Bad Guys Close In",
+            "description": "The hero faces increasing pressure from both external and internal conflicts. Things get worse.",
+            "page_number": 55
+        },
+        {
+            "name": "All Is Lost",
+            "description": "The hero hits rock bottom, experiencing a major defeat or loss. Often involves a 'whiff of death'.",
+            "page_number": 75
+        },
+        {
+            "name": "Dark Night of the Soul",
+            "description": "The hero reflects on their journey and must find the strength to continue. Often involves a moment of clarity.",
+            "page_number": 75
+        },
+        {
+            "name": "Break into Three",
+            "description": "The hero finds a solution and makes a final push toward their goal, armed with what they've learned.",
+            "page_number": 85
+        },
+        {
+            "name": "Finale",
+            "description": "The hero faces their final challenge and proves they've learned the theme. The story's main conflict is resolved.",
+            "page_number": 85
+        },
+        {
+            "name": "Final Image",
+            "description": "A visual bookend to the Opening Image, showing how the hero and their world have changed.",
+            "page_number": 110
+        }
+    ]
+} 

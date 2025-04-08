@@ -1,0 +1,1036 @@
+2025-04-07 21:05:13,651 - __main__ - INFO - Starting re-ingestion of Save the Cat framework document
+2025-04-07 21:05:13,708 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-07 21:05:13,766 - __main__ - INFO - Re-ingesting framework document from data/save_the_cat.pdf
+2025-04-07 21:05:13,766 - src.rag.document_loader - INFO - Loading framework document: data/save_the_cat.pdf
+2025-04-07 21:05:13,776 - src.rag.document_loader - INFO - Total pages in PDF: 228
+2025-04-07 21:05:13,776 - src.rag.document_loader - INFO - Processing page 1/228 - Extracted 0 characters
+2025-04-07 21:05:13,780 - src.rag.document_loader - INFO - Processing page 2/228 - Extracted 377 characters
+2025-04-07 21:05:13,780 - src.rag.document_loader - INFO - Processing page 3/228 - Extracted 0 characters
+2025-04-07 21:05:13,785 - src.rag.document_loader - INFO - Processing page 4/228 - Extracted 1508 characters
+2025-04-07 21:05:13,788 - src.rag.document_loader - INFO - Processing page 5/228 - Extracted 1459 characters
+2025-04-07 21:05:13,790 - src.rag.document_loader - INFO - Processing page 6/228 - Extracted 790 characters
+2025-04-07 21:05:13,790 - src.rag.document_loader - INFO - Processing page 7/228 - Extracted 0 characters
+2025-04-07 21:05:13,792 - src.rag.document_loader - INFO - Processing page 8/228 - Extracted 752 characters
+2025-04-07 21:05:13,793 - src.rag.document_loader - INFO - Processing page 9/228 - Extracted 196 characters
+2025-04-07 21:05:13,796 - src.rag.document_loader - INFO - Processing page 10/228 - Extracted 1128 characters
+2025-04-07 21:05:13,800 - src.rag.document_loader - INFO - Processing page 11/228 - Extracted 1468 characters
+2025-04-07 21:05:13,801 - src.rag.document_loader - INFO - Processing page 12/228 - Extracted 107 characters
+2025-04-07 21:05:13,803 - src.rag.document_loader - INFO - Processing page 13/228 - Extracted 800 characters
+2025-04-07 21:05:13,809 - src.rag.document_loader - INFO - Processing page 14/228 - Extracted 1757 characters
+2025-04-07 21:05:13,813 - src.rag.document_loader - INFO - Processing page 15/228 - Extracted 1962 characters
+2025-04-07 21:05:13,816 - src.rag.document_loader - INFO - Processing page 16/228 - Extracted 1148 characters
+2025-04-07 21:05:13,821 - src.rag.document_loader - INFO - Processing page 17/228 - Extracted 1961 characters
+2025-04-07 21:05:13,826 - src.rag.document_loader - INFO - Processing page 18/228 - Extracted 2143 characters
+2025-04-07 21:05:13,831 - src.rag.document_loader - INFO - Processing page 19/228 - Extracted 1802 characters
+2025-04-07 21:05:13,837 - src.rag.document_loader - INFO - Processing page 20/228 - Extracted 2180 characters
+2025-04-07 21:05:13,838 - src.rag.document_loader - INFO - Processing page 21/228 - Extracted 435 characters
+2025-04-07 21:05:13,841 - src.rag.document_loader - INFO - Processing page 22/228 - Extracted 1100 characters
+2025-04-07 21:05:13,845 - src.rag.document_loader - INFO - Processing page 23/228 - Extracted 1654 characters
+2025-04-07 21:05:13,851 - src.rag.document_loader - INFO - Processing page 24/228 - Extracted 2072 characters
+2025-04-07 21:05:13,852 - src.rag.document_loader - INFO - Processing page 25/228 - Extracted 230 characters
+2025-04-07 21:05:13,856 - src.rag.document_loader - INFO - Processing page 26/228 - Extracted 1874 characters
+2025-04-07 21:05:13,858 - src.rag.document_loader - INFO - Processing page 27/228 - Extracted 698 characters
+2025-04-07 21:05:13,863 - src.rag.document_loader - INFO - Processing page 28/228 - Extracted 1740 characters
+2025-04-07 21:05:13,863 - src.rag.document_loader - INFO - Processing page 29/228 - Extracted 82 characters
+2025-04-07 21:05:13,869 - src.rag.document_loader - INFO - Processing page 30/228 - Extracted 2048 characters
+2025-04-07 21:05:13,873 - src.rag.document_loader - INFO - Processing page 31/228 - Extracted 1521 characters
+2025-04-07 21:05:13,878 - src.rag.document_loader - INFO - Processing page 32/228 - Extracted 1798 characters
+2025-04-07 21:05:13,881 - src.rag.document_loader - INFO - Processing page 33/228 - Extracted 1040 characters
+2025-04-07 21:05:13,883 - src.rag.document_loader - INFO - Processing page 34/228 - Extracted 956 characters
+2025-04-07 21:05:13,888 - src.rag.document_loader - INFO - Processing page 35/228 - Extracted 2110 characters
+2025-04-07 21:05:13,891 - src.rag.document_loader - INFO - Processing page 36/228 - Extracted 1358 characters
+2025-04-07 21:05:13,895 - src.rag.document_loader - INFO - Processing page 37/228 - Extracted 1429 characters
+2025-04-07 21:05:13,895 - src.rag.document_loader - INFO - Processing page 38/228 - Extracted 76 characters
+2025-04-07 21:05:13,901 - src.rag.document_loader - INFO - Processing page 39/228 - Extracted 1894 characters
+2025-04-07 21:05:13,905 - src.rag.document_loader - INFO - Processing page 40/228 - Extracted 1740 characters
+2025-04-07 21:05:13,909 - src.rag.document_loader - INFO - Processing page 41/228 - Extracted 1741 characters
+2025-04-07 21:05:13,913 - src.rag.document_loader - INFO - Processing page 42/228 - Extracted 1586 characters
+2025-04-07 21:05:13,915 - src.rag.document_loader - INFO - Processing page 43/228 - Extracted 459 characters
+2025-04-07 21:05:13,917 - src.rag.document_loader - INFO - Processing page 44/228 - Extracted 1006 characters
+2025-04-07 21:05:13,922 - src.rag.document_loader - INFO - Processing page 45/228 - Extracted 1786 characters
+2025-04-07 21:05:13,926 - src.rag.document_loader - INFO - Processing page 46/228 - Extracted 1569 characters
+2025-04-07 21:05:13,931 - src.rag.document_loader - INFO - Processing page 47/228 - Extracted 2024 characters
+2025-04-07 21:05:13,936 - src.rag.document_loader - INFO - Processing page 48/228 - Extracted 1633 characters
+2025-04-07 21:05:13,941 - src.rag.document_loader - INFO - Processing page 49/228 - Extracted 2100 characters
+2025-04-07 21:05:13,945 - src.rag.document_loader - INFO - Processing page 50/228 - Extracted 1335 characters
+2025-04-07 21:05:13,951 - src.rag.document_loader - INFO - Processing page 51/228 - Extracted 2124 characters
+2025-04-07 21:05:13,953 - src.rag.document_loader - INFO - Processing page 52/228 - Extracted 779 characters
+2025-04-07 21:05:13,958 - src.rag.document_loader - INFO - Processing page 53/228 - Extracted 2112 characters
+2025-04-07 21:05:13,963 - src.rag.document_loader - INFO - Processing page 54/228 - Extracted 1924 characters
+2025-04-07 21:05:13,968 - src.rag.document_loader - INFO - Processing page 55/228 - Extracted 1999 characters
+2025-04-07 21:05:13,969 - src.rag.document_loader - INFO - Processing page 56/228 - Extracted 87 characters
+2025-04-07 21:05:13,974 - src.rag.document_loader - INFO - Processing page 57/228 - Extracted 2200 characters
+2025-04-07 21:05:13,976 - src.rag.document_loader - INFO - Processing page 58/228 - Extracted 416 characters
+2025-04-07 21:05:13,982 - src.rag.document_loader - INFO - Processing page 59/228 - Extracted 2336 characters
+2025-04-07 21:05:13,985 - src.rag.document_loader - INFO - Processing page 60/228 - Extracted 1315 characters
+2025-04-07 21:05:13,990 - src.rag.document_loader - INFO - Processing page 61/228 - Extracted 1826 characters
+2025-04-07 21:05:13,995 - src.rag.document_loader - INFO - Processing page 62/228 - Extracted 2017 characters
+2025-04-07 21:05:13,996 - src.rag.document_loader - INFO - Processing page 63/228 - Extracted 393 characters
+2025-04-07 21:05:14,001 - src.rag.document_loader - INFO - Processing page 64/228 - Extracted 2158 characters
+2025-04-07 21:05:14,003 - src.rag.document_loader - INFO - Processing page 65/228 - Extracted 869 characters
+2025-04-07 21:05:14,009 - src.rag.document_loader - INFO - Processing page 66/228 - Extracted 2243 characters
+2025-04-07 21:05:14,011 - src.rag.document_loader - INFO - Processing page 67/228 - Extracted 742 characters
+2025-04-07 21:05:14,016 - src.rag.document_loader - INFO - Processing page 68/228 - Extracted 1911 characters
+2025-04-07 21:05:14,021 - src.rag.document_loader - INFO - Processing page 69/228 - Extracted 2101 characters
+2025-04-07 21:05:14,026 - src.rag.document_loader - INFO - Processing page 70/228 - Extracted 1904 characters
+2025-04-07 21:05:14,028 - src.rag.document_loader - INFO - Processing page 71/228 - Extracted 430 characters
+2025-04-07 21:05:14,031 - src.rag.document_loader - INFO - Processing page 72/228 - Extracted 1100 characters
+2025-04-07 21:05:14,035 - src.rag.document_loader - INFO - Processing page 73/228 - Extracted 1466 characters
+2025-04-07 21:05:14,040 - src.rag.document_loader - INFO - Processing page 74/228 - Extracted 2072 characters
+2025-04-07 21:05:14,043 - src.rag.document_loader - INFO - Processing page 75/228 - Extracted 1237 characters
+2025-04-07 21:05:14,048 - src.rag.document_loader - INFO - Processing page 76/228 - Extracted 2151 characters
+2025-04-07 21:05:14,054 - src.rag.document_loader - INFO - Processing page 77/228 - Extracted 2203 characters
+2025-04-07 21:05:14,060 - src.rag.document_loader - INFO - Processing page 78/228 - Extracted 2237 characters
+2025-04-07 21:05:14,060 - src.rag.document_loader - INFO - Processing page 79/228 - Extracted 35 characters
+2025-04-07 21:05:14,064 - src.rag.document_loader - INFO - Processing page 80/228 - Extracted 1514 characters
+2025-04-07 21:05:14,068 - src.rag.document_loader - INFO - Processing page 81/228 - Extracted 1555 characters
+2025-04-07 21:05:14,072 - src.rag.document_loader - INFO - Processing page 82/228 - Extracted 1565 characters
+2025-04-07 21:05:14,075 - src.rag.document_loader - INFO - Processing page 83/228 - Extracted 938 characters
+2025-04-07 21:05:14,078 - src.rag.document_loader - INFO - Processing page 84/228 - Extracted 1586 characters
+2025-04-07 21:05:14,084 - src.rag.document_loader - INFO - Processing page 85/228 - Extracted 2009 characters
+2025-04-07 21:05:14,085 - src.rag.document_loader - INFO - Processing page 86/228 - Extracted 167 characters
+2025-04-07 21:05:14,090 - src.rag.document_loader - INFO - Processing page 87/228 - Extracted 1846 characters
+2025-04-07 21:05:14,096 - src.rag.document_loader - INFO - Processing page 88/228 - Extracted 2268 characters
+2025-04-07 21:05:14,101 - src.rag.document_loader - INFO - Processing page 89/228 - Extracted 1495 characters
+2025-04-07 21:05:14,106 - src.rag.document_loader - INFO - Processing page 90/228 - Extracted 1970 characters
+2025-04-07 21:05:14,110 - src.rag.document_loader - INFO - Processing page 91/228 - Extracted 1768 characters
+2025-04-07 21:05:14,111 - src.rag.document_loader - INFO - Processing page 92/228 - Extracted 266 characters
+2025-04-07 21:05:14,114 - src.rag.document_loader - INFO - Processing page 93/228 - Extracted 997 characters
+2025-04-07 21:05:14,115 - src.rag.document_loader - INFO - Processing page 94/228 - Extracted 209 characters
+2025-04-07 21:05:14,120 - src.rag.document_loader - INFO - Processing page 95/228 - Extracted 1952 characters
+2025-04-07 21:05:14,123 - src.rag.document_loader - INFO - Processing page 96/228 - Extracted 1163 characters
+2025-04-07 21:05:14,126 - src.rag.document_loader - INFO - Processing page 97/228 - Extracted 929 characters
+2025-04-07 21:05:14,129 - src.rag.document_loader - INFO - Processing page 98/228 - Extracted 1504 characters
+2025-04-07 21:05:14,134 - src.rag.document_loader - INFO - Processing page 99/228 - Extracted 2181 characters
+2025-04-07 21:05:14,137 - src.rag.document_loader - INFO - Processing page 100/228 - Extracted 1012 characters
+2025-04-07 21:05:14,139 - src.rag.document_loader - INFO - Processing page 101/228 - Extracted 895 characters
+2025-04-07 21:05:14,145 - src.rag.document_loader - INFO - Processing page 102/228 - Extracted 2100 characters
+2025-04-07 21:05:14,148 - src.rag.document_loader - INFO - Processing page 103/228 - Extracted 856 characters
+2025-04-07 21:05:14,153 - src.rag.document_loader - INFO - Processing page 104/228 - Extracted 1948 characters
+2025-04-07 21:05:14,173 - src.rag.document_loader - INFO - Processing page 105/228 - Extracted 1992 characters
+2025-04-07 21:05:14,173 - src.rag.document_loader - INFO - Processing page 106/228 - Extracted 121 characters
+2025-04-07 21:05:14,177 - src.rag.document_loader - INFO - Processing page 107/228 - Extracted 1399 characters
+2025-04-07 21:05:14,182 - src.rag.document_loader - INFO - Processing page 108/228 - Extracted 2092 characters
+2025-04-07 21:05:14,183 - src.rag.document_loader - INFO - Processing page 109/228 - Extracted 224 characters
+2025-04-07 21:05:14,189 - src.rag.document_loader - INFO - Processing page 110/228 - Extracted 2285 characters
+2025-04-07 21:05:14,190 - src.rag.document_loader - INFO - Processing page 111/228 - Extracted 510 characters
+2025-04-07 21:05:14,196 - src.rag.document_loader - INFO - Processing page 112/228 - Extracted 2175 characters
+2025-04-07 21:05:14,199 - src.rag.document_loader - INFO - Processing page 113/228 - Extracted 1348 characters
+2025-04-07 21:05:14,201 - src.rag.document_loader - INFO - Processing page 114/228 - Extracted 412 characters
+2025-04-07 21:05:14,205 - src.rag.document_loader - INFO - Processing page 115/228 - Extracted 2063 characters
+2025-04-07 21:05:14,207 - src.rag.document_loader - INFO - Processing page 116/228 - Extracted 461 characters
+2025-04-07 21:05:14,212 - src.rag.document_loader - INFO - Processing page 117/228 - Extracted 2005 characters
+2025-04-07 21:05:14,215 - src.rag.document_loader - INFO - Processing page 118/228 - Extracted 1077 characters
+2025-04-07 21:05:14,218 - src.rag.document_loader - INFO - Processing page 119/228 - Extracted 1433 characters
+2025-04-07 21:05:14,220 - src.rag.document_loader - INFO - Processing page 120/228 - Extracted 819 characters
+2025-04-07 21:05:14,223 - src.rag.document_loader - INFO - Processing page 121/228 - Extracted 953 characters
+2025-04-07 21:05:14,226 - src.rag.document_loader - INFO - Processing page 122/228 - Extracted 913 characters
+2025-04-07 21:05:14,230 - src.rag.document_loader - INFO - Processing page 123/228 - Extracted 1719 characters
+2025-04-07 21:05:14,234 - src.rag.document_loader - INFO - Processing page 124/228 - Extracted 1334 characters
+2025-04-07 21:05:14,239 - src.rag.document_loader - INFO - Processing page 125/228 - Extracted 2119 characters
+2025-04-07 21:05:14,243 - src.rag.document_loader - INFO - Processing page 126/228 - Extracted 1639 characters
+2025-04-07 21:05:14,246 - src.rag.document_loader - INFO - Processing page 127/228 - Extracted 1002 characters
+2025-04-07 21:05:14,250 - src.rag.document_loader - INFO - Processing page 128/228 - Extracted 1535 characters
+2025-04-07 21:05:14,253 - src.rag.document_loader - INFO - Processing page 129/228 - Extracted 1291 characters
+2025-04-07 21:05:14,258 - src.rag.document_loader - INFO - Processing page 130/228 - Extracted 1871 characters
+2025-04-07 21:05:14,262 - src.rag.document_loader - INFO - Processing page 131/228 - Extracted 1878 characters
+2025-04-07 21:05:14,263 - src.rag.document_loader - INFO - Processing page 132/228 - Extracted 60 characters
+2025-04-07 21:05:14,266 - src.rag.document_loader - INFO - Processing page 133/228 - Extracted 1242 characters
+2025-04-07 21:05:14,270 - src.rag.document_loader - INFO - Processing page 134/228 - Extracted 1517 characters
+2025-04-07 21:05:14,273 - src.rag.document_loader - INFO - Processing page 135/228 - Extracted 1314 characters
+2025-04-07 21:05:14,277 - src.rag.document_loader - INFO - Processing page 136/228 - Extracted 1302 characters
+2025-04-07 21:05:14,281 - src.rag.document_loader - INFO - Processing page 137/228 - Extracted 1524 characters
+2025-04-07 21:05:14,283 - src.rag.document_loader - INFO - Processing page 138/228 - Extracted 652 characters
+2025-04-07 21:05:14,286 - src.rag.document_loader - INFO - Processing page 139/228 - Extracted 1392 characters
+2025-04-07 21:05:14,291 - src.rag.document_loader - INFO - Processing page 140/228 - Extracted 1691 characters
+2025-04-07 21:05:14,295 - src.rag.document_loader - INFO - Processing page 141/228 - Extracted 1511 characters
+2025-04-07 21:05:14,298 - src.rag.document_loader - INFO - Processing page 142/228 - Extracted 1221 characters
+2025-04-07 21:05:14,304 - src.rag.document_loader - INFO - Processing page 143/228 - Extracted 2392 characters
+2025-04-07 21:05:14,306 - src.rag.document_loader - INFO - Processing page 144/228 - Extracted 628 characters
+2025-04-07 21:05:14,312 - src.rag.document_loader - INFO - Processing page 145/228 - Extracted 2096 characters
+2025-04-07 21:05:14,312 - src.rag.document_loader - INFO - Processing page 146/228 - Extracted 105 characters
+2025-04-07 21:05:14,315 - src.rag.document_loader - INFO - Processing page 147/228 - Extracted 1004 characters
+2025-04-07 21:05:14,319 - src.rag.document_loader - INFO - Processing page 148/228 - Extracted 1582 characters
+2025-04-07 21:05:14,324 - src.rag.document_loader - INFO - Processing page 149/228 - Extracted 2031 characters
+2025-04-07 21:05:14,328 - src.rag.document_loader - INFO - Processing page 150/228 - Extracted 1532 characters
+2025-04-07 21:05:14,331 - src.rag.document_loader - INFO - Processing page 151/228 - Extracted 1130 characters
+2025-04-07 21:05:14,333 - src.rag.document_loader - INFO - Processing page 152/228 - Extracted 1036 characters
+2025-04-07 21:05:14,339 - src.rag.document_loader - INFO - Processing page 153/228 - Extracted 2204 characters
+2025-04-07 21:05:14,345 - src.rag.document_loader - INFO - Processing page 154/228 - Extracted 2358 characters
+2025-04-07 21:05:14,347 - src.rag.document_loader - INFO - Processing page 155/228 - Extracted 973 characters
+2025-04-07 21:05:14,353 - src.rag.document_loader - INFO - Processing page 156/228 - Extracted 2003 characters
+2025-04-07 21:05:14,357 - src.rag.document_loader - INFO - Processing page 157/228 - Extracted 2022 characters
+2025-04-07 21:05:14,362 - src.rag.document_loader - INFO - Processing page 158/228 - Extracted 1659 characters
+2025-04-07 21:05:14,365 - src.rag.document_loader - INFO - Processing page 159/228 - Extracted 1277 characters
+2025-04-07 21:05:14,367 - src.rag.document_loader - INFO - Processing page 160/228 - Extracted 793 characters
+2025-04-07 21:05:14,372 - src.rag.document_loader - INFO - Processing page 161/228 - Extracted 1984 characters
+2025-04-07 21:05:14,377 - src.rag.document_loader - INFO - Processing page 162/228 - Extracted 2271 characters
+2025-04-07 21:05:14,382 - src.rag.document_loader - INFO - Processing page 163/228 - Extracted 1907 characters
+2025-04-07 21:05:14,387 - src.rag.document_loader - INFO - Processing page 164/228 - Extracted 1610 characters
+2025-04-07 21:05:14,391 - src.rag.document_loader - INFO - Processing page 165/228 - Extracted 1792 characters
+2025-04-07 21:05:14,395 - src.rag.document_loader - INFO - Processing page 166/228 - Extracted 1406 characters
+2025-04-07 21:05:14,400 - src.rag.document_loader - INFO - Processing page 167/228 - Extracted 1817 characters
+2025-04-07 21:05:14,404 - src.rag.document_loader - INFO - Processing page 168/228 - Extracted 1665 characters
+2025-04-07 21:05:14,404 - src.rag.document_loader - INFO - Processing page 169/228 - Extracted 39 characters
+2025-04-07 21:05:14,409 - src.rag.document_loader - INFO - Processing page 170/228 - Extracted 1948 characters
+2025-04-07 21:05:14,415 - src.rag.document_loader - INFO - Processing page 171/228 - Extracted 2178 characters
+2025-04-07 21:05:14,419 - src.rag.document_loader - INFO - Processing page 172/228 - Extracted 1825 characters
+2025-04-07 21:05:14,421 - src.rag.document_loader - INFO - Processing page 173/228 - Extracted 785 characters
+2025-04-07 21:05:14,424 - src.rag.document_loader - INFO - Processing page 174/228 - Extracted 991 characters
+2025-04-07 21:05:14,428 - src.rag.document_loader - INFO - Processing page 175/228 - Extracted 1686 characters
+2025-04-07 21:05:14,432 - src.rag.document_loader - INFO - Processing page 176/228 - Extracted 1657 characters
+2025-04-07 21:05:14,435 - src.rag.document_loader - INFO - Processing page 177/228 - Extracted 1045 characters
+2025-04-07 21:05:14,440 - src.rag.document_loader - INFO - Processing page 178/228 - Extracted 2060 characters
+2025-04-07 21:05:14,443 - src.rag.document_loader - INFO - Processing page 179/228 - Extracted 943 characters
+2025-04-07 21:05:14,448 - src.rag.document_loader - INFO - Processing page 180/228 - Extracted 1877 characters
+2025-04-07 21:05:14,451 - src.rag.document_loader - INFO - Processing page 181/228 - Extracted 1134 characters
+2025-04-07 21:05:14,455 - src.rag.document_loader - INFO - Processing page 182/228 - Extracted 1801 characters
+2025-04-07 21:05:14,458 - src.rag.document_loader - INFO - Processing page 183/228 - Extracted 1246 characters
+2025-04-07 21:05:14,463 - src.rag.document_loader - INFO - Processing page 184/228 - Extracted 1963 characters
+2025-04-07 21:05:14,466 - src.rag.document_loader - INFO - Processing page 185/228 - Extracted 864 characters
+2025-04-07 21:05:14,470 - src.rag.document_loader - INFO - Processing page 186/228 - Extracted 1639 characters
+2025-04-07 21:05:14,473 - src.rag.document_loader - INFO - Processing page 187/228 - Extracted 1282 characters
+2025-04-07 21:05:14,478 - src.rag.document_loader - INFO - Processing page 188/228 - Extracted 2227 characters
+2025-04-07 21:05:14,481 - src.rag.document_loader - INFO - Processing page 189/228 - Extracted 826 characters
+2025-04-07 21:05:14,485 - src.rag.document_loader - INFO - Processing page 190/228 - Extracted 2051 characters
+2025-04-07 21:05:14,488 - src.rag.document_loader - INFO - Processing page 191/228 - Extracted 1039 characters
+2025-04-07 21:05:14,492 - src.rag.document_loader - INFO - Processing page 192/228 - Extracted 1782 characters
+2025-04-07 21:05:14,496 - src.rag.document_loader - INFO - Processing page 193/228 - Extracted 1285 characters
+2025-04-07 21:05:14,500 - src.rag.document_loader - INFO - Processing page 194/228 - Extracted 1709 characters
+2025-04-07 21:05:14,503 - src.rag.document_loader - INFO - Processing page 195/228 - Extracted 1276 characters
+2025-04-07 21:05:14,506 - src.rag.document_loader - INFO - Processing page 196/228 - Extracted 949 characters
+2025-04-07 21:05:14,509 - src.rag.document_loader - INFO - Processing page 197/228 - Extracted 1414 characters
+2025-04-07 21:05:14,514 - src.rag.document_loader - INFO - Processing page 198/228 - Extracted 1843 characters
+2025-04-07 21:05:14,520 - src.rag.document_loader - INFO - Processing page 199/228 - Extracted 2241 characters
+2025-04-07 21:05:14,524 - src.rag.document_loader - INFO - Processing page 200/228 - Extracted 1730 characters
+2025-04-07 21:05:14,527 - src.rag.document_loader - INFO - Processing page 201/228 - Extracted 1367 characters
+2025-04-07 21:05:14,532 - src.rag.document_loader - INFO - Processing page 202/228 - Extracted 1588 characters
+2025-04-07 21:05:14,537 - src.rag.document_loader - INFO - Processing page 203/228 - Extracted 1864 characters
+2025-04-07 21:05:14,539 - src.rag.document_loader - INFO - Processing page 204/228 - Extracted 378 characters
+2025-04-07 21:05:14,544 - src.rag.document_loader - INFO - Processing page 205/228 - Extracted 1783 characters
+2025-04-07 21:05:14,548 - src.rag.document_loader - INFO - Processing page 206/228 - Extracted 1326 characters
+2025-04-07 21:05:14,553 - src.rag.document_loader - INFO - Processing page 207/228 - Extracted 2028 characters
+2025-04-07 21:05:14,554 - src.rag.document_loader - INFO - Processing page 208/228 - Extracted 381 characters
+2025-04-07 21:05:14,559 - src.rag.document_loader - INFO - Processing page 209/228 - Extracted 1813 characters
+2025-04-07 21:05:14,562 - src.rag.document_loader - INFO - Processing page 210/228 - Extracted 1410 characters
+2025-04-07 21:05:14,565 - src.rag.document_loader - INFO - Processing page 211/228 - Extracted 1081 characters
+2025-04-07 21:05:14,568 - src.rag.document_loader - INFO - Processing page 212/228 - Extracted 1253 characters
+2025-04-07 21:05:14,569 - src.rag.document_loader - INFO - Processing page 213/228 - Extracted 137 characters
+2025-04-07 21:05:14,574 - src.rag.document_loader - INFO - Processing page 214/228 - Extracted 1941 characters
+2025-04-07 21:05:14,577 - src.rag.document_loader - INFO - Processing page 215/228 - Extracted 1410 characters
+2025-04-07 21:05:14,581 - src.rag.document_loader - INFO - Processing page 216/228 - Extracted 1575 characters
+2025-04-07 21:05:14,588 - src.rag.document_loader - INFO - Processing page 217/228 - Extracted 2306 characters
+2025-04-07 21:05:14,594 - src.rag.document_loader - INFO - Processing page 218/228 - Extracted 2438 characters
+2025-04-07 21:05:14,600 - src.rag.document_loader - INFO - Processing page 219/228 - Extracted 2417 characters
+2025-04-07 21:05:14,605 - src.rag.document_loader - INFO - Processing page 220/228 - Extracted 2258 characters
+2025-04-07 21:05:14,611 - src.rag.document_loader - INFO - Processing page 221/228 - Extracted 2342 characters
+2025-04-07 21:05:14,617 - src.rag.document_loader - INFO - Processing page 222/228 - Extracted 2405 characters
+2025-04-07 21:05:14,623 - src.rag.document_loader - INFO - Processing page 223/228 - Extracted 2287 characters
+2025-04-07 21:05:14,629 - src.rag.document_loader - INFO - Processing page 224/228 - Extracted 2429 characters
+2025-04-07 21:05:14,634 - src.rag.document_loader - INFO - Processing page 225/228 - Extracted 1994 characters
+2025-04-07 21:05:14,637 - src.rag.document_loader - INFO - Processing page 226/228 - Extracted 1068 characters
+2025-04-07 21:05:14,640 - src.rag.document_loader - INFO - Processing page 227/228 - Extracted 1306 characters
+2025-04-07 21:05:14,641 - src.rag.document_loader - INFO - Processing page 228/228 - Extracted 61 characters
+2025-04-07 21:05:14,641 - src.rag.document_loader - INFO - Total text extracted: 325294 characters
+2025-04-07 21:05:14,641 - src.rag.document_loader - INFO - Extracting beat definitions from text...
+2025-04-07 21:05:14,652 - src.rag.document_loader - INFO - Extracted beat: All Is Lost (65392 chars)
+2025-04-07 21:05:14,653 - src.rag.document_loader - INFO - Extracted beat: Catalyst (13424 chars)
+2025-04-07 21:05:14,654 - src.rag.document_loader - INFO - Extracted beat: Bad Guys Close In (4946 chars)
+2025-04-07 21:05:14,654 - src.rag.document_loader - INFO - Extracted beat: Dark Night of the Soul (4852 chars)
+2025-04-07 21:05:14,654 - src.rag.document_loader - INFO - Extracted beat: Opening Image (341 chars)
+2025-04-07 21:05:14,654 - src.rag.document_loader - INFO - Extracted beat: Theme Stated (899 chars)
+2025-04-07 21:05:14,654 - src.rag.document_loader - INFO - Extracted beat: Catalyst (628 chars)
+2025-04-07 21:05:14,654 - src.rag.document_loader - INFO - Extracted beat: Debate (458 chars)
+2025-04-07 21:05:14,654 - src.rag.document_loader - INFO - Extracted beat: Fun and Games (406 chars)
+2025-04-07 21:05:14,654 - src.rag.document_loader - INFO - Extracted beat: B Story (587 chars)
+2025-04-07 21:05:14,654 - src.rag.document_loader - INFO - Extracted beat: Midpoint (537 chars)
+2025-04-07 21:05:14,654 - src.rag.document_loader - INFO - Extracted beat: All Is Lost (479 chars)
+2025-04-07 21:05:14,654 - src.rag.document_loader - INFO - Extracted beat: Dark Night of the Soul (450 chars)
+2025-04-07 21:05:14,654 - src.rag.document_loader - INFO - Extracted beat: Finale (230 chars)
+2025-04-07 21:05:14,654 - src.rag.document_loader - INFO - Extracted beat: Theme Stated (279 chars)
+2025-04-07 21:05:14,663 - src.rag.document_loader - INFO - Extracted beat: Final Image (154380 chars)
+2025-04-07 21:05:14,663 - src.rag.document_loader - INFO - Total beats extracted: 16
+2025-04-07 21:05:14,663 - src.rag.document_loader - WARNING - Error checking existing collections: 'VectorStore' object has no attribute 'list_collections'
+2025-04-07 21:05:14,669 - src.rag.document_loader - INFO - Adding 16 beat documents to collection
+2025-04-07 21:05:17,487 - src.rag.document_loader - INFO - Successfully loaded framework document with 16 beat definitions
+2025-04-07 21:05:17,488 - __main__ - INFO - Testing beat retrieval
+2025-04-07 21:05:17,488 - __main__ - INFO - Testing retrieval for 'All Is Lost'
+2025-04-07 21:05:18,158 - __main__ - INFO - Found definition for All Is Lost: BEAT TYPE: All Is Lost
+
+DEFINITION: Told by her boss to stand down, Sandra refuses. She has a lead o...
+2025-04-07 21:05:18,158 - __main__ - INFO - Metadata: {'beat_type': 'All Is Lost', 'index': 11, 'source': 'save_the_cat.pdf'}
+2025-04-07 21:05:18,158 - __main__ - INFO - Testing retrieval for 'Dark Night of the Soul'
+2025-04-07 21:05:18,817 - __main__ - INFO - Found definition for Dark Night of the Soul: BEAT TYPE: Dark Night of the Soul
+
+DEFINITION: It can last five seconds or five minutes. But it’s in...
+2025-04-07 21:05:18,817 - __main__ - INFO - Metadata: {'index': 3, 'beat_type': 'Dark Night of the Soul', 'source': 'save_the_cat.pdf'}
+2025-04-07 21:05:18,817 - __main__ - INFO - Testing retrieval for 'Midpoint'
+2025-04-07 21:05:19,491 - __main__ - INFO - Found definition for Midpoint: BEAT TYPE: Midpoint
+
+DEFINITION: The fun and games are over as a new threat to the pageant is announ...
+2025-04-07 21:05:19,491 - __main__ - INFO - Metadata: {'index': 10, 'beat_type': 'Midpoint', 'source': 'save_the_cat.pdf'}
+2025-04-07 21:05:19,491 - __main__ - INFO - Testing retrieval for 'Break Into Two'
+2025-04-07 21:05:20,159 - __main__ - WARNING - No definition found for Break Into Two
+2025-04-07 21:05:20,159 - __main__ - INFO - Re-ingestion complete
+2025-04-07 21:17:20,548 - __main__ - INFO - Starting re-ingestion of Save the Cat framework document
+2025-04-07 21:17:20,575 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-07 21:17:20,600 - __main__ - INFO - Re-ingesting framework document from data/save_the_cat.pdf
+2025-04-07 21:17:20,600 - src.rag.document_loader - INFO - Loading framework document: data/save_the_cat.pdf
+2025-04-07 21:17:20,610 - src.rag.document_loader - INFO - Total pages in PDF: 228
+2025-04-07 21:17:20,610 - src.rag.document_loader - INFO - Processing page 1/228 - Extracted 0 characters
+2025-04-07 21:17:20,614 - src.rag.document_loader - INFO - Processing page 2/228 - Extracted 377 characters
+2025-04-07 21:17:20,614 - src.rag.document_loader - INFO - Processing page 3/228 - Extracted 0 characters
+2025-04-07 21:17:20,619 - src.rag.document_loader - INFO - Processing page 4/228 - Extracted 1508 characters
+2025-04-07 21:17:20,622 - src.rag.document_loader - INFO - Processing page 5/228 - Extracted 1459 characters
+2025-04-07 21:17:20,624 - src.rag.document_loader - INFO - Processing page 6/228 - Extracted 790 characters
+2025-04-07 21:17:20,624 - src.rag.document_loader - INFO - Processing page 7/228 - Extracted 0 characters
+2025-04-07 21:17:20,626 - src.rag.document_loader - INFO - Processing page 8/228 - Extracted 752 characters
+2025-04-07 21:17:20,627 - src.rag.document_loader - INFO - Processing page 9/228 - Extracted 196 characters
+2025-04-07 21:17:20,630 - src.rag.document_loader - INFO - Processing page 10/228 - Extracted 1128 characters
+2025-04-07 21:17:20,635 - src.rag.document_loader - INFO - Processing page 11/228 - Extracted 1468 characters
+2025-04-07 21:17:20,636 - src.rag.document_loader - INFO - Processing page 12/228 - Extracted 107 characters
+2025-04-07 21:17:20,638 - src.rag.document_loader - INFO - Processing page 13/228 - Extracted 800 characters
+2025-04-07 21:17:20,643 - src.rag.document_loader - INFO - Processing page 14/228 - Extracted 1757 characters
+2025-04-07 21:17:20,648 - src.rag.document_loader - INFO - Processing page 15/228 - Extracted 1962 characters
+2025-04-07 21:17:20,651 - src.rag.document_loader - INFO - Processing page 16/228 - Extracted 1148 characters
+2025-04-07 21:17:20,656 - src.rag.document_loader - INFO - Processing page 17/228 - Extracted 1961 characters
+2025-04-07 21:17:20,661 - src.rag.document_loader - INFO - Processing page 18/228 - Extracted 2143 characters
+2025-04-07 21:17:20,666 - src.rag.document_loader - INFO - Processing page 19/228 - Extracted 1802 characters
+2025-04-07 21:17:20,672 - src.rag.document_loader - INFO - Processing page 20/228 - Extracted 2180 characters
+2025-04-07 21:17:20,673 - src.rag.document_loader - INFO - Processing page 21/228 - Extracted 435 characters
+2025-04-07 21:17:20,676 - src.rag.document_loader - INFO - Processing page 22/228 - Extracted 1100 characters
+2025-04-07 21:17:20,680 - src.rag.document_loader - INFO - Processing page 23/228 - Extracted 1654 characters
+2025-04-07 21:17:20,685 - src.rag.document_loader - INFO - Processing page 24/228 - Extracted 2072 characters
+2025-04-07 21:17:20,686 - src.rag.document_loader - INFO - Processing page 25/228 - Extracted 230 characters
+2025-04-07 21:17:20,691 - src.rag.document_loader - INFO - Processing page 26/228 - Extracted 1874 characters
+2025-04-07 21:17:20,693 - src.rag.document_loader - INFO - Processing page 27/228 - Extracted 698 characters
+2025-04-07 21:17:20,698 - src.rag.document_loader - INFO - Processing page 28/228 - Extracted 1740 characters
+2025-04-07 21:17:20,698 - src.rag.document_loader - INFO - Processing page 29/228 - Extracted 82 characters
+2025-04-07 21:17:20,703 - src.rag.document_loader - INFO - Processing page 30/228 - Extracted 2048 characters
+2025-04-07 21:17:20,707 - src.rag.document_loader - INFO - Processing page 31/228 - Extracted 1521 characters
+2025-04-07 21:17:20,712 - src.rag.document_loader - INFO - Processing page 32/228 - Extracted 1798 characters
+2025-04-07 21:17:20,715 - src.rag.document_loader - INFO - Processing page 33/228 - Extracted 1040 characters
+2025-04-07 21:17:20,717 - src.rag.document_loader - INFO - Processing page 34/228 - Extracted 956 characters
+2025-04-07 21:17:20,723 - src.rag.document_loader - INFO - Processing page 35/228 - Extracted 2110 characters
+2025-04-07 21:17:20,726 - src.rag.document_loader - INFO - Processing page 36/228 - Extracted 1358 characters
+2025-04-07 21:17:20,729 - src.rag.document_loader - INFO - Processing page 37/228 - Extracted 1429 characters
+2025-04-07 21:17:20,730 - src.rag.document_loader - INFO - Processing page 38/228 - Extracted 76 characters
+2025-04-07 21:17:20,735 - src.rag.document_loader - INFO - Processing page 39/228 - Extracted 1894 characters
+2025-04-07 21:17:20,739 - src.rag.document_loader - INFO - Processing page 40/228 - Extracted 1740 characters
+2025-04-07 21:17:20,744 - src.rag.document_loader - INFO - Processing page 41/228 - Extracted 1741 characters
+2025-04-07 21:17:20,748 - src.rag.document_loader - INFO - Processing page 42/228 - Extracted 1586 characters
+2025-04-07 21:17:20,750 - src.rag.document_loader - INFO - Processing page 43/228 - Extracted 459 characters
+2025-04-07 21:17:20,752 - src.rag.document_loader - INFO - Processing page 44/228 - Extracted 1006 characters
+2025-04-07 21:17:20,757 - src.rag.document_loader - INFO - Processing page 45/228 - Extracted 1786 characters
+2025-04-07 21:17:20,760 - src.rag.document_loader - INFO - Processing page 46/228 - Extracted 1569 characters
+2025-04-07 21:17:20,766 - src.rag.document_loader - INFO - Processing page 47/228 - Extracted 2024 characters
+2025-04-07 21:17:20,771 - src.rag.document_loader - INFO - Processing page 48/228 - Extracted 1633 characters
+2025-04-07 21:17:20,776 - src.rag.document_loader - INFO - Processing page 49/228 - Extracted 2100 characters
+2025-04-07 21:17:20,780 - src.rag.document_loader - INFO - Processing page 50/228 - Extracted 1335 characters
+2025-04-07 21:17:20,786 - src.rag.document_loader - INFO - Processing page 51/228 - Extracted 2124 characters
+2025-04-07 21:17:20,788 - src.rag.document_loader - INFO - Processing page 52/228 - Extracted 779 characters
+2025-04-07 21:17:20,793 - src.rag.document_loader - INFO - Processing page 53/228 - Extracted 2112 characters
+2025-04-07 21:17:20,798 - src.rag.document_loader - INFO - Processing page 54/228 - Extracted 1924 characters
+2025-04-07 21:17:20,803 - src.rag.document_loader - INFO - Processing page 55/228 - Extracted 1999 characters
+2025-04-07 21:17:20,804 - src.rag.document_loader - INFO - Processing page 56/228 - Extracted 87 characters
+2025-04-07 21:17:20,809 - src.rag.document_loader - INFO - Processing page 57/228 - Extracted 2200 characters
+2025-04-07 21:17:20,810 - src.rag.document_loader - INFO - Processing page 58/228 - Extracted 416 characters
+2025-04-07 21:17:20,816 - src.rag.document_loader - INFO - Processing page 59/228 - Extracted 2336 characters
+2025-04-07 21:17:20,820 - src.rag.document_loader - INFO - Processing page 60/228 - Extracted 1315 characters
+2025-04-07 21:17:20,824 - src.rag.document_loader - INFO - Processing page 61/228 - Extracted 1826 characters
+2025-04-07 21:17:20,829 - src.rag.document_loader - INFO - Processing page 62/228 - Extracted 2017 characters
+2025-04-07 21:17:20,830 - src.rag.document_loader - INFO - Processing page 63/228 - Extracted 393 characters
+2025-04-07 21:17:20,836 - src.rag.document_loader - INFO - Processing page 64/228 - Extracted 2158 characters
+2025-04-07 21:17:20,838 - src.rag.document_loader - INFO - Processing page 65/228 - Extracted 869 characters
+2025-04-07 21:17:20,843 - src.rag.document_loader - INFO - Processing page 66/228 - Extracted 2243 characters
+2025-04-07 21:17:20,845 - src.rag.document_loader - INFO - Processing page 67/228 - Extracted 742 characters
+2025-04-07 21:17:20,850 - src.rag.document_loader - INFO - Processing page 68/228 - Extracted 1911 characters
+2025-04-07 21:17:20,855 - src.rag.document_loader - INFO - Processing page 69/228 - Extracted 2101 characters
+2025-04-07 21:17:20,860 - src.rag.document_loader - INFO - Processing page 70/228 - Extracted 1904 characters
+2025-04-07 21:17:20,862 - src.rag.document_loader - INFO - Processing page 71/228 - Extracted 430 characters
+2025-04-07 21:17:20,865 - src.rag.document_loader - INFO - Processing page 72/228 - Extracted 1100 characters
+2025-04-07 21:17:20,869 - src.rag.document_loader - INFO - Processing page 73/228 - Extracted 1466 characters
+2025-04-07 21:17:20,874 - src.rag.document_loader - INFO - Processing page 74/228 - Extracted 2072 characters
+2025-04-07 21:17:20,877 - src.rag.document_loader - INFO - Processing page 75/228 - Extracted 1237 characters
+2025-04-07 21:17:20,883 - src.rag.document_loader - INFO - Processing page 76/228 - Extracted 2151 characters
+2025-04-07 21:17:20,889 - src.rag.document_loader - INFO - Processing page 77/228 - Extracted 2203 characters
+2025-04-07 21:17:20,894 - src.rag.document_loader - INFO - Processing page 78/228 - Extracted 2237 characters
+2025-04-07 21:17:20,894 - src.rag.document_loader - INFO - Processing page 79/228 - Extracted 35 characters
+2025-04-07 21:17:20,898 - src.rag.document_loader - INFO - Processing page 80/228 - Extracted 1514 characters
+2025-04-07 21:17:20,902 - src.rag.document_loader - INFO - Processing page 81/228 - Extracted 1555 characters
+2025-04-07 21:17:20,907 - src.rag.document_loader - INFO - Processing page 82/228 - Extracted 1565 characters
+2025-04-07 21:17:20,909 - src.rag.document_loader - INFO - Processing page 83/228 - Extracted 938 characters
+2025-04-07 21:17:20,913 - src.rag.document_loader - INFO - Processing page 84/228 - Extracted 1586 characters
+2025-04-07 21:17:20,918 - src.rag.document_loader - INFO - Processing page 85/228 - Extracted 2009 characters
+2025-04-07 21:17:20,919 - src.rag.document_loader - INFO - Processing page 86/228 - Extracted 167 characters
+2025-04-07 21:17:20,923 - src.rag.document_loader - INFO - Processing page 87/228 - Extracted 1846 characters
+2025-04-07 21:17:20,929 - src.rag.document_loader - INFO - Processing page 88/228 - Extracted 2268 characters
+2025-04-07 21:17:20,934 - src.rag.document_loader - INFO - Processing page 89/228 - Extracted 1495 characters
+2025-04-07 21:17:20,938 - src.rag.document_loader - INFO - Processing page 90/228 - Extracted 1970 characters
+2025-04-07 21:17:20,943 - src.rag.document_loader - INFO - Processing page 91/228 - Extracted 1768 characters
+2025-04-07 21:17:20,944 - src.rag.document_loader - INFO - Processing page 92/228 - Extracted 266 characters
+2025-04-07 21:17:20,947 - src.rag.document_loader - INFO - Processing page 93/228 - Extracted 997 characters
+2025-04-07 21:17:20,947 - src.rag.document_loader - INFO - Processing page 94/228 - Extracted 209 characters
+2025-04-07 21:17:20,953 - src.rag.document_loader - INFO - Processing page 95/228 - Extracted 1952 characters
+2025-04-07 21:17:20,956 - src.rag.document_loader - INFO - Processing page 96/228 - Extracted 1163 characters
+2025-04-07 21:17:20,959 - src.rag.document_loader - INFO - Processing page 97/228 - Extracted 929 characters
+2025-04-07 21:17:20,962 - src.rag.document_loader - INFO - Processing page 98/228 - Extracted 1504 characters
+2025-04-07 21:17:20,968 - src.rag.document_loader - INFO - Processing page 99/228 - Extracted 2181 characters
+2025-04-07 21:17:20,970 - src.rag.document_loader - INFO - Processing page 100/228 - Extracted 1012 characters
+2025-04-07 21:17:20,973 - src.rag.document_loader - INFO - Processing page 101/228 - Extracted 895 characters
+2025-04-07 21:17:20,978 - src.rag.document_loader - INFO - Processing page 102/228 - Extracted 2100 characters
+2025-04-07 21:17:20,981 - src.rag.document_loader - INFO - Processing page 103/228 - Extracted 856 characters
+2025-04-07 21:17:20,986 - src.rag.document_loader - INFO - Processing page 104/228 - Extracted 1948 characters
+2025-04-07 21:17:21,005 - src.rag.document_loader - INFO - Processing page 105/228 - Extracted 1992 characters
+2025-04-07 21:17:21,006 - src.rag.document_loader - INFO - Processing page 106/228 - Extracted 121 characters
+2025-04-07 21:17:21,009 - src.rag.document_loader - INFO - Processing page 107/228 - Extracted 1399 characters
+2025-04-07 21:17:21,015 - src.rag.document_loader - INFO - Processing page 108/228 - Extracted 2092 characters
+2025-04-07 21:17:21,015 - src.rag.document_loader - INFO - Processing page 109/228 - Extracted 224 characters
+2025-04-07 21:17:21,021 - src.rag.document_loader - INFO - Processing page 110/228 - Extracted 2285 characters
+2025-04-07 21:17:21,023 - src.rag.document_loader - INFO - Processing page 111/228 - Extracted 510 characters
+2025-04-07 21:17:21,029 - src.rag.document_loader - INFO - Processing page 112/228 - Extracted 2175 characters
+2025-04-07 21:17:21,033 - src.rag.document_loader - INFO - Processing page 113/228 - Extracted 1348 characters
+2025-04-07 21:17:21,034 - src.rag.document_loader - INFO - Processing page 114/228 - Extracted 412 characters
+2025-04-07 21:17:21,039 - src.rag.document_loader - INFO - Processing page 115/228 - Extracted 2063 characters
+2025-04-07 21:17:21,040 - src.rag.document_loader - INFO - Processing page 116/228 - Extracted 461 characters
+2025-04-07 21:17:21,045 - src.rag.document_loader - INFO - Processing page 117/228 - Extracted 2005 characters
+2025-04-07 21:17:21,048 - src.rag.document_loader - INFO - Processing page 118/228 - Extracted 1077 characters
+2025-04-07 21:17:21,052 - src.rag.document_loader - INFO - Processing page 119/228 - Extracted 1433 characters
+2025-04-07 21:17:21,054 - src.rag.document_loader - INFO - Processing page 120/228 - Extracted 819 characters
+2025-04-07 21:17:21,056 - src.rag.document_loader - INFO - Processing page 121/228 - Extracted 953 characters
+2025-04-07 21:17:21,058 - src.rag.document_loader - INFO - Processing page 122/228 - Extracted 913 characters
+2025-04-07 21:17:21,063 - src.rag.document_loader - INFO - Processing page 123/228 - Extracted 1719 characters
+2025-04-07 21:17:21,066 - src.rag.document_loader - INFO - Processing page 124/228 - Extracted 1334 characters
+2025-04-07 21:17:21,072 - src.rag.document_loader - INFO - Processing page 125/228 - Extracted 2119 characters
+2025-04-07 21:17:21,076 - src.rag.document_loader - INFO - Processing page 126/228 - Extracted 1639 characters
+2025-04-07 21:17:21,079 - src.rag.document_loader - INFO - Processing page 127/228 - Extracted 1002 characters
+2025-04-07 21:17:21,082 - src.rag.document_loader - INFO - Processing page 128/228 - Extracted 1535 characters
+2025-04-07 21:17:21,085 - src.rag.document_loader - INFO - Processing page 129/228 - Extracted 1291 characters
+2025-04-07 21:17:21,090 - src.rag.document_loader - INFO - Processing page 130/228 - Extracted 1871 characters
+2025-04-07 21:17:21,094 - src.rag.document_loader - INFO - Processing page 131/228 - Extracted 1878 characters
+2025-04-07 21:17:21,095 - src.rag.document_loader - INFO - Processing page 132/228 - Extracted 60 characters
+2025-04-07 21:17:21,098 - src.rag.document_loader - INFO - Processing page 133/228 - Extracted 1242 characters
+2025-04-07 21:17:21,102 - src.rag.document_loader - INFO - Processing page 134/228 - Extracted 1517 characters
+2025-04-07 21:17:21,106 - src.rag.document_loader - INFO - Processing page 135/228 - Extracted 1314 characters
+2025-04-07 21:17:21,109 - src.rag.document_loader - INFO - Processing page 136/228 - Extracted 1302 characters
+2025-04-07 21:17:21,113 - src.rag.document_loader - INFO - Processing page 137/228 - Extracted 1524 characters
+2025-04-07 21:17:21,115 - src.rag.document_loader - INFO - Processing page 138/228 - Extracted 652 characters
+2025-04-07 21:17:21,118 - src.rag.document_loader - INFO - Processing page 139/228 - Extracted 1392 characters
+2025-04-07 21:17:21,123 - src.rag.document_loader - INFO - Processing page 140/228 - Extracted 1691 characters
+2025-04-07 21:17:21,127 - src.rag.document_loader - INFO - Processing page 141/228 - Extracted 1511 characters
+2025-04-07 21:17:21,131 - src.rag.document_loader - INFO - Processing page 142/228 - Extracted 1221 characters
+2025-04-07 21:17:21,136 - src.rag.document_loader - INFO - Processing page 143/228 - Extracted 2392 characters
+2025-04-07 21:17:21,138 - src.rag.document_loader - INFO - Processing page 144/228 - Extracted 628 characters
+2025-04-07 21:17:21,144 - src.rag.document_loader - INFO - Processing page 145/228 - Extracted 2096 characters
+2025-04-07 21:17:21,144 - src.rag.document_loader - INFO - Processing page 146/228 - Extracted 105 characters
+2025-04-07 21:17:21,147 - src.rag.document_loader - INFO - Processing page 147/228 - Extracted 1004 characters
+2025-04-07 21:17:21,151 - src.rag.document_loader - INFO - Processing page 148/228 - Extracted 1582 characters
+2025-04-07 21:17:21,156 - src.rag.document_loader - INFO - Processing page 149/228 - Extracted 2031 characters
+2025-04-07 21:17:21,160 - src.rag.document_loader - INFO - Processing page 150/228 - Extracted 1532 characters
+2025-04-07 21:17:21,162 - src.rag.document_loader - INFO - Processing page 151/228 - Extracted 1130 characters
+2025-04-07 21:17:21,166 - src.rag.document_loader - INFO - Processing page 152/228 - Extracted 1036 characters
+2025-04-07 21:17:21,171 - src.rag.document_loader - INFO - Processing page 153/228 - Extracted 2204 characters
+2025-04-07 21:17:21,177 - src.rag.document_loader - INFO - Processing page 154/228 - Extracted 2358 characters
+2025-04-07 21:17:21,179 - src.rag.document_loader - INFO - Processing page 155/228 - Extracted 973 characters
+2025-04-07 21:17:21,184 - src.rag.document_loader - INFO - Processing page 156/228 - Extracted 2003 characters
+2025-04-07 21:17:21,189 - src.rag.document_loader - INFO - Processing page 157/228 - Extracted 2022 characters
+2025-04-07 21:17:21,193 - src.rag.document_loader - INFO - Processing page 158/228 - Extracted 1659 characters
+2025-04-07 21:17:21,197 - src.rag.document_loader - INFO - Processing page 159/228 - Extracted 1277 characters
+2025-04-07 21:17:21,199 - src.rag.document_loader - INFO - Processing page 160/228 - Extracted 793 characters
+2025-04-07 21:17:21,204 - src.rag.document_loader - INFO - Processing page 161/228 - Extracted 1984 characters
+2025-04-07 21:17:21,209 - src.rag.document_loader - INFO - Processing page 162/228 - Extracted 2271 characters
+2025-04-07 21:17:21,214 - src.rag.document_loader - INFO - Processing page 163/228 - Extracted 1907 characters
+2025-04-07 21:17:21,218 - src.rag.document_loader - INFO - Processing page 164/228 - Extracted 1610 characters
+2025-04-07 21:17:21,223 - src.rag.document_loader - INFO - Processing page 165/228 - Extracted 1792 characters
+2025-04-07 21:17:21,227 - src.rag.document_loader - INFO - Processing page 166/228 - Extracted 1406 characters
+2025-04-07 21:17:21,232 - src.rag.document_loader - INFO - Processing page 167/228 - Extracted 1817 characters
+2025-04-07 21:17:21,236 - src.rag.document_loader - INFO - Processing page 168/228 - Extracted 1665 characters
+2025-04-07 21:17:21,236 - src.rag.document_loader - INFO - Processing page 169/228 - Extracted 39 characters
+2025-04-07 21:17:21,241 - src.rag.document_loader - INFO - Processing page 170/228 - Extracted 1948 characters
+2025-04-07 21:17:21,247 - src.rag.document_loader - INFO - Processing page 171/228 - Extracted 2178 characters
+2025-04-07 21:17:21,252 - src.rag.document_loader - INFO - Processing page 172/228 - Extracted 1825 characters
+2025-04-07 21:17:21,254 - src.rag.document_loader - INFO - Processing page 173/228 - Extracted 785 characters
+2025-04-07 21:17:21,256 - src.rag.document_loader - INFO - Processing page 174/228 - Extracted 991 characters
+2025-04-07 21:17:21,260 - src.rag.document_loader - INFO - Processing page 175/228 - Extracted 1686 characters
+2025-04-07 21:17:21,265 - src.rag.document_loader - INFO - Processing page 176/228 - Extracted 1657 characters
+2025-04-07 21:17:21,268 - src.rag.document_loader - INFO - Processing page 177/228 - Extracted 1045 characters
+2025-04-07 21:17:21,274 - src.rag.document_loader - INFO - Processing page 178/228 - Extracted 2060 characters
+2025-04-07 21:17:21,276 - src.rag.document_loader - INFO - Processing page 179/228 - Extracted 943 characters
+2025-04-07 21:17:21,281 - src.rag.document_loader - INFO - Processing page 180/228 - Extracted 1877 characters
+2025-04-07 21:17:21,284 - src.rag.document_loader - INFO - Processing page 181/228 - Extracted 1134 characters
+2025-04-07 21:17:21,288 - src.rag.document_loader - INFO - Processing page 182/228 - Extracted 1801 characters
+2025-04-07 21:17:21,291 - src.rag.document_loader - INFO - Processing page 183/228 - Extracted 1246 characters
+2025-04-07 21:17:21,297 - src.rag.document_loader - INFO - Processing page 184/228 - Extracted 1963 characters
+2025-04-07 21:17:21,299 - src.rag.document_loader - INFO - Processing page 185/228 - Extracted 864 characters
+2025-04-07 21:17:21,303 - src.rag.document_loader - INFO - Processing page 186/228 - Extracted 1639 characters
+2025-04-07 21:17:21,306 - src.rag.document_loader - INFO - Processing page 187/228 - Extracted 1282 characters
+2025-04-07 21:17:21,312 - src.rag.document_loader - INFO - Processing page 188/228 - Extracted 2227 characters
+2025-04-07 21:17:21,314 - src.rag.document_loader - INFO - Processing page 189/228 - Extracted 826 characters
+2025-04-07 21:17:21,319 - src.rag.document_loader - INFO - Processing page 190/228 - Extracted 2051 characters
+2025-04-07 21:17:21,321 - src.rag.document_loader - INFO - Processing page 191/228 - Extracted 1039 characters
+2025-04-07 21:17:21,325 - src.rag.document_loader - INFO - Processing page 192/228 - Extracted 1782 characters
+2025-04-07 21:17:21,330 - src.rag.document_loader - INFO - Processing page 193/228 - Extracted 1285 characters
+2025-04-07 21:17:21,354 - src.rag.document_loader - INFO - Processing page 194/228 - Extracted 1709 characters
+2025-04-07 21:17:21,395 - src.rag.document_loader - INFO - Processing page 195/228 - Extracted 1276 characters
+2025-04-07 21:17:21,398 - src.rag.document_loader - INFO - Processing page 196/228 - Extracted 949 characters
+2025-04-07 21:17:21,402 - src.rag.document_loader - INFO - Processing page 197/228 - Extracted 1414 characters
+2025-04-07 21:17:21,416 - src.rag.document_loader - INFO - Processing page 198/228 - Extracted 1843 characters
+2025-04-07 21:17:21,424 - src.rag.document_loader - INFO - Processing page 199/228 - Extracted 2241 characters
+2025-04-07 21:17:21,428 - src.rag.document_loader - INFO - Processing page 200/228 - Extracted 1730 characters
+2025-04-07 21:17:21,432 - src.rag.document_loader - INFO - Processing page 201/228 - Extracted 1367 characters
+2025-04-07 21:17:21,437 - src.rag.document_loader - INFO - Processing page 202/228 - Extracted 1588 characters
+2025-04-07 21:17:21,442 - src.rag.document_loader - INFO - Processing page 203/228 - Extracted 1864 characters
+2025-04-07 21:17:21,443 - src.rag.document_loader - INFO - Processing page 204/228 - Extracted 378 characters
+2025-04-07 21:17:21,449 - src.rag.document_loader - INFO - Processing page 205/228 - Extracted 1783 characters
+2025-04-07 21:17:21,452 - src.rag.document_loader - INFO - Processing page 206/228 - Extracted 1326 characters
+2025-04-07 21:17:21,458 - src.rag.document_loader - INFO - Processing page 207/228 - Extracted 2028 characters
+2025-04-07 21:17:21,459 - src.rag.document_loader - INFO - Processing page 208/228 - Extracted 381 characters
+2025-04-07 21:17:21,464 - src.rag.document_loader - INFO - Processing page 209/228 - Extracted 1813 characters
+2025-04-07 21:17:21,467 - src.rag.document_loader - INFO - Processing page 210/228 - Extracted 1410 characters
+2025-04-07 21:17:21,470 - src.rag.document_loader - INFO - Processing page 211/228 - Extracted 1081 characters
+2025-04-07 21:17:21,473 - src.rag.document_loader - INFO - Processing page 212/228 - Extracted 1253 characters
+2025-04-07 21:17:21,473 - src.rag.document_loader - INFO - Processing page 213/228 - Extracted 137 characters
+2025-04-07 21:17:21,478 - src.rag.document_loader - INFO - Processing page 214/228 - Extracted 1941 characters
+2025-04-07 21:17:21,482 - src.rag.document_loader - INFO - Processing page 215/228 - Extracted 1410 characters
+2025-04-07 21:17:21,486 - src.rag.document_loader - INFO - Processing page 216/228 - Extracted 1575 characters
+2025-04-07 21:17:21,492 - src.rag.document_loader - INFO - Processing page 217/228 - Extracted 2306 characters
+2025-04-07 21:17:21,498 - src.rag.document_loader - INFO - Processing page 218/228 - Extracted 2438 characters
+2025-04-07 21:17:21,504 - src.rag.document_loader - INFO - Processing page 219/228 - Extracted 2417 characters
+2025-04-07 21:17:21,510 - src.rag.document_loader - INFO - Processing page 220/228 - Extracted 2258 characters
+2025-04-07 21:17:21,516 - src.rag.document_loader - INFO - Processing page 221/228 - Extracted 2342 characters
+2025-04-07 21:17:21,522 - src.rag.document_loader - INFO - Processing page 222/228 - Extracted 2405 characters
+2025-04-07 21:17:21,527 - src.rag.document_loader - INFO - Processing page 223/228 - Extracted 2287 characters
+2025-04-07 21:17:21,534 - src.rag.document_loader - INFO - Processing page 224/228 - Extracted 2429 characters
+2025-04-07 21:17:21,539 - src.rag.document_loader - INFO - Processing page 225/228 - Extracted 1994 characters
+2025-04-07 21:17:21,542 - src.rag.document_loader - INFO - Processing page 226/228 - Extracted 1068 characters
+2025-04-07 21:17:21,545 - src.rag.document_loader - INFO - Processing page 227/228 - Extracted 1306 characters
+2025-04-07 21:17:21,545 - src.rag.document_loader - INFO - Processing page 228/228 - Extracted 61 characters
+2025-04-07 21:17:21,545 - src.rag.document_loader - INFO - Total text extracted: 325294 characters
+2025-04-07 21:17:21,545 - src.rag.document_loader - INFO - Extracting beat definitions from text...
+2025-04-07 21:17:21,557 - src.rag.document_loader - INFO - Extracted beat: All Is Lost (65392 chars)
+2025-04-07 21:17:21,558 - src.rag.document_loader - INFO - Extracted beat: Catalyst (13424 chars)
+2025-04-07 21:17:21,558 - src.rag.document_loader - INFO - Extracted beat: Bad Guys Close In (4946 chars)
+2025-04-07 21:17:21,558 - src.rag.document_loader - INFO - Extracted beat: Dark Night of the Soul (4852 chars)
+2025-04-07 21:17:21,558 - src.rag.document_loader - INFO - Extracted beat: Opening Image (341 chars)
+2025-04-07 21:17:21,559 - src.rag.document_loader - INFO - Extracted beat: Theme Stated (899 chars)
+2025-04-07 21:17:21,559 - src.rag.document_loader - INFO - Extracted beat: Catalyst (628 chars)
+2025-04-07 21:17:21,559 - src.rag.document_loader - INFO - Extracted beat: Debate (458 chars)
+2025-04-07 21:17:21,559 - src.rag.document_loader - INFO - Extracted beat: Fun and Games (406 chars)
+2025-04-07 21:17:21,559 - src.rag.document_loader - INFO - Extracted beat: B Story (587 chars)
+2025-04-07 21:17:21,559 - src.rag.document_loader - INFO - Extracted beat: Midpoint (537 chars)
+2025-04-07 21:17:21,559 - src.rag.document_loader - INFO - Extracted beat: All Is Lost (479 chars)
+2025-04-07 21:17:21,559 - src.rag.document_loader - INFO - Extracted beat: Dark Night of the Soul (450 chars)
+2025-04-07 21:17:21,559 - src.rag.document_loader - INFO - Extracted beat: Finale (230 chars)
+2025-04-07 21:17:21,559 - src.rag.document_loader - INFO - Extracted beat: Theme Stated (279 chars)
+2025-04-07 21:17:21,568 - src.rag.document_loader - INFO - Extracted beat: Final Image (154380 chars)
+2025-04-07 21:17:21,568 - src.rag.document_loader - INFO - Total beats extracted: 16
+2025-04-07 21:17:21,568 - src.rag.document_loader - WARNING - Error checking existing collections: 'VectorStore' object has no attribute 'list_collections'
+2025-04-07 21:17:21,569 - __main__ - ERROR - Error re-ingesting framework document: Collection [save_the_cat_beats] already exists
+2025-04-07 21:19:09,805 - __main__ - INFO - Starting re-ingestion of Save the Cat framework document
+2025-04-07 21:19:09,834 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-07 21:19:09,859 - __main__ - INFO - Re-ingesting framework document from data/save_the_cat.pdf
+2025-04-07 21:19:09,859 - src.rag.document_loader - INFO - Loading framework document: data/save_the_cat.pdf
+2025-04-07 21:19:09,870 - src.rag.document_loader - INFO - Total pages in PDF: 228
+2025-04-07 21:19:09,870 - src.rag.document_loader - INFO - Processing page 1/228 - Extracted 0 characters
+2025-04-07 21:19:09,873 - src.rag.document_loader - INFO - Processing page 2/228 - Extracted 377 characters
+2025-04-07 21:19:09,874 - src.rag.document_loader - INFO - Processing page 3/228 - Extracted 0 characters
+2025-04-07 21:19:09,878 - src.rag.document_loader - INFO - Processing page 4/228 - Extracted 1508 characters
+2025-04-07 21:19:09,882 - src.rag.document_loader - INFO - Processing page 5/228 - Extracted 1459 characters
+2025-04-07 21:19:09,884 - src.rag.document_loader - INFO - Processing page 6/228 - Extracted 790 characters
+2025-04-07 21:19:09,884 - src.rag.document_loader - INFO - Processing page 7/228 - Extracted 0 characters
+2025-04-07 21:19:09,886 - src.rag.document_loader - INFO - Processing page 8/228 - Extracted 752 characters
+2025-04-07 21:19:09,886 - src.rag.document_loader - INFO - Processing page 9/228 - Extracted 196 characters
+2025-04-07 21:19:09,890 - src.rag.document_loader - INFO - Processing page 10/228 - Extracted 1128 characters
+2025-04-07 21:19:09,894 - src.rag.document_loader - INFO - Processing page 11/228 - Extracted 1468 characters
+2025-04-07 21:19:09,894 - src.rag.document_loader - INFO - Processing page 12/228 - Extracted 107 characters
+2025-04-07 21:19:09,897 - src.rag.document_loader - INFO - Processing page 13/228 - Extracted 800 characters
+2025-04-07 21:19:09,903 - src.rag.document_loader - INFO - Processing page 14/228 - Extracted 1757 characters
+2025-04-07 21:19:09,907 - src.rag.document_loader - INFO - Processing page 15/228 - Extracted 1962 characters
+2025-04-07 21:19:09,910 - src.rag.document_loader - INFO - Processing page 16/228 - Extracted 1148 characters
+2025-04-07 21:19:09,915 - src.rag.document_loader - INFO - Processing page 17/228 - Extracted 1961 characters
+2025-04-07 21:19:09,921 - src.rag.document_loader - INFO - Processing page 18/228 - Extracted 2143 characters
+2025-04-07 21:19:09,926 - src.rag.document_loader - INFO - Processing page 19/228 - Extracted 1802 characters
+2025-04-07 21:19:09,932 - src.rag.document_loader - INFO - Processing page 20/228 - Extracted 2180 characters
+2025-04-07 21:19:09,933 - src.rag.document_loader - INFO - Processing page 21/228 - Extracted 435 characters
+2025-04-07 21:19:09,936 - src.rag.document_loader - INFO - Processing page 22/228 - Extracted 1100 characters
+2025-04-07 21:19:09,940 - src.rag.document_loader - INFO - Processing page 23/228 - Extracted 1654 characters
+2025-04-07 21:19:09,946 - src.rag.document_loader - INFO - Processing page 24/228 - Extracted 2072 characters
+2025-04-07 21:19:09,947 - src.rag.document_loader - INFO - Processing page 25/228 - Extracted 230 characters
+2025-04-07 21:19:09,952 - src.rag.document_loader - INFO - Processing page 26/228 - Extracted 1874 characters
+2025-04-07 21:19:09,953 - src.rag.document_loader - INFO - Processing page 27/228 - Extracted 698 characters
+2025-04-07 21:19:09,958 - src.rag.document_loader - INFO - Processing page 28/228 - Extracted 1740 characters
+2025-04-07 21:19:09,958 - src.rag.document_loader - INFO - Processing page 29/228 - Extracted 82 characters
+2025-04-07 21:19:09,964 - src.rag.document_loader - INFO - Processing page 30/228 - Extracted 2048 characters
+2025-04-07 21:19:09,968 - src.rag.document_loader - INFO - Processing page 31/228 - Extracted 1521 characters
+2025-04-07 21:19:09,973 - src.rag.document_loader - INFO - Processing page 32/228 - Extracted 1798 characters
+2025-04-07 21:19:09,975 - src.rag.document_loader - INFO - Processing page 33/228 - Extracted 1040 characters
+2025-04-07 21:19:09,978 - src.rag.document_loader - INFO - Processing page 34/228 - Extracted 956 characters
+2025-04-07 21:19:09,983 - src.rag.document_loader - INFO - Processing page 35/228 - Extracted 2110 characters
+2025-04-07 21:19:09,986 - src.rag.document_loader - INFO - Processing page 36/228 - Extracted 1358 characters
+2025-04-07 21:19:09,990 - src.rag.document_loader - INFO - Processing page 37/228 - Extracted 1429 characters
+2025-04-07 21:19:09,990 - src.rag.document_loader - INFO - Processing page 38/228 - Extracted 76 characters
+2025-04-07 21:19:09,996 - src.rag.document_loader - INFO - Processing page 39/228 - Extracted 1894 characters
+2025-04-07 21:19:10,000 - src.rag.document_loader - INFO - Processing page 40/228 - Extracted 1740 characters
+2025-04-07 21:19:10,004 - src.rag.document_loader - INFO - Processing page 41/228 - Extracted 1741 characters
+2025-04-07 21:19:10,008 - src.rag.document_loader - INFO - Processing page 42/228 - Extracted 1586 characters
+2025-04-07 21:19:10,010 - src.rag.document_loader - INFO - Processing page 43/228 - Extracted 459 characters
+2025-04-07 21:19:10,012 - src.rag.document_loader - INFO - Processing page 44/228 - Extracted 1006 characters
+2025-04-07 21:19:10,017 - src.rag.document_loader - INFO - Processing page 45/228 - Extracted 1786 characters
+2025-04-07 21:19:10,021 - src.rag.document_loader - INFO - Processing page 46/228 - Extracted 1569 characters
+2025-04-07 21:19:10,026 - src.rag.document_loader - INFO - Processing page 47/228 - Extracted 2024 characters
+2025-04-07 21:19:10,031 - src.rag.document_loader - INFO - Processing page 48/228 - Extracted 1633 characters
+2025-04-07 21:19:10,037 - src.rag.document_loader - INFO - Processing page 49/228 - Extracted 2100 characters
+2025-04-07 21:19:10,040 - src.rag.document_loader - INFO - Processing page 50/228 - Extracted 1335 characters
+2025-04-07 21:19:10,046 - src.rag.document_loader - INFO - Processing page 51/228 - Extracted 2124 characters
+2025-04-07 21:19:10,048 - src.rag.document_loader - INFO - Processing page 52/228 - Extracted 779 characters
+2025-04-07 21:19:10,053 - src.rag.document_loader - INFO - Processing page 53/228 - Extracted 2112 characters
+2025-04-07 21:19:10,058 - src.rag.document_loader - INFO - Processing page 54/228 - Extracted 1924 characters
+2025-04-07 21:19:10,064 - src.rag.document_loader - INFO - Processing page 55/228 - Extracted 1999 characters
+2025-04-07 21:19:10,065 - src.rag.document_loader - INFO - Processing page 56/228 - Extracted 87 characters
+2025-04-07 21:19:10,070 - src.rag.document_loader - INFO - Processing page 57/228 - Extracted 2200 characters
+2025-04-07 21:19:10,072 - src.rag.document_loader - INFO - Processing page 58/228 - Extracted 416 characters
+2025-04-07 21:19:10,078 - src.rag.document_loader - INFO - Processing page 59/228 - Extracted 2336 characters
+2025-04-07 21:19:10,081 - src.rag.document_loader - INFO - Processing page 60/228 - Extracted 1315 characters
+2025-04-07 21:19:10,086 - src.rag.document_loader - INFO - Processing page 61/228 - Extracted 1826 characters
+2025-04-07 21:19:10,091 - src.rag.document_loader - INFO - Processing page 62/228 - Extracted 2017 characters
+2025-04-07 21:19:10,092 - src.rag.document_loader - INFO - Processing page 63/228 - Extracted 393 characters
+2025-04-07 21:19:10,097 - src.rag.document_loader - INFO - Processing page 64/228 - Extracted 2158 characters
+2025-04-07 21:19:10,099 - src.rag.document_loader - INFO - Processing page 65/228 - Extracted 869 characters
+2025-04-07 21:19:10,105 - src.rag.document_loader - INFO - Processing page 66/228 - Extracted 2243 characters
+2025-04-07 21:19:10,107 - src.rag.document_loader - INFO - Processing page 67/228 - Extracted 742 characters
+2025-04-07 21:19:10,112 - src.rag.document_loader - INFO - Processing page 68/228 - Extracted 1911 characters
+2025-04-07 21:19:10,117 - src.rag.document_loader - INFO - Processing page 69/228 - Extracted 2101 characters
+2025-04-07 21:19:10,123 - src.rag.document_loader - INFO - Processing page 70/228 - Extracted 1904 characters
+2025-04-07 21:19:10,124 - src.rag.document_loader - INFO - Processing page 71/228 - Extracted 430 characters
+2025-04-07 21:19:10,127 - src.rag.document_loader - INFO - Processing page 72/228 - Extracted 1100 characters
+2025-04-07 21:19:10,131 - src.rag.document_loader - INFO - Processing page 73/228 - Extracted 1466 characters
+2025-04-07 21:19:10,136 - src.rag.document_loader - INFO - Processing page 74/228 - Extracted 2072 characters
+2025-04-07 21:19:10,139 - src.rag.document_loader - INFO - Processing page 75/228 - Extracted 1237 characters
+2025-04-07 21:19:10,145 - src.rag.document_loader - INFO - Processing page 76/228 - Extracted 2151 characters
+2025-04-07 21:19:10,151 - src.rag.document_loader - INFO - Processing page 77/228 - Extracted 2203 characters
+2025-04-07 21:19:10,156 - src.rag.document_loader - INFO - Processing page 78/228 - Extracted 2237 characters
+2025-04-07 21:19:10,157 - src.rag.document_loader - INFO - Processing page 79/228 - Extracted 35 characters
+2025-04-07 21:19:10,161 - src.rag.document_loader - INFO - Processing page 80/228 - Extracted 1514 characters
+2025-04-07 21:19:10,165 - src.rag.document_loader - INFO - Processing page 81/228 - Extracted 1555 characters
+2025-04-07 21:19:10,169 - src.rag.document_loader - INFO - Processing page 82/228 - Extracted 1565 characters
+2025-04-07 21:19:10,172 - src.rag.document_loader - INFO - Processing page 83/228 - Extracted 938 characters
+2025-04-07 21:19:10,175 - src.rag.document_loader - INFO - Processing page 84/228 - Extracted 1586 characters
+2025-04-07 21:19:10,181 - src.rag.document_loader - INFO - Processing page 85/228 - Extracted 2009 characters
+2025-04-07 21:19:10,182 - src.rag.document_loader - INFO - Processing page 86/228 - Extracted 167 characters
+2025-04-07 21:19:10,186 - src.rag.document_loader - INFO - Processing page 87/228 - Extracted 1846 characters
+2025-04-07 21:19:10,192 - src.rag.document_loader - INFO - Processing page 88/228 - Extracted 2268 characters
+2025-04-07 21:19:10,196 - src.rag.document_loader - INFO - Processing page 89/228 - Extracted 1495 characters
+2025-04-07 21:19:10,201 - src.rag.document_loader - INFO - Processing page 90/228 - Extracted 1970 characters
+2025-04-07 21:19:10,205 - src.rag.document_loader - INFO - Processing page 91/228 - Extracted 1768 characters
+2025-04-07 21:19:10,206 - src.rag.document_loader - INFO - Processing page 92/228 - Extracted 266 characters
+2025-04-07 21:19:10,209 - src.rag.document_loader - INFO - Processing page 93/228 - Extracted 997 characters
+2025-04-07 21:19:10,210 - src.rag.document_loader - INFO - Processing page 94/228 - Extracted 209 characters
+2025-04-07 21:19:10,215 - src.rag.document_loader - INFO - Processing page 95/228 - Extracted 1952 characters
+2025-04-07 21:19:10,218 - src.rag.document_loader - INFO - Processing page 96/228 - Extracted 1163 characters
+2025-04-07 21:19:10,221 - src.rag.document_loader - INFO - Processing page 97/228 - Extracted 929 characters
+2025-04-07 21:19:10,225 - src.rag.document_loader - INFO - Processing page 98/228 - Extracted 1504 characters
+2025-04-07 21:19:10,230 - src.rag.document_loader - INFO - Processing page 99/228 - Extracted 2181 characters
+2025-04-07 21:19:10,233 - src.rag.document_loader - INFO - Processing page 100/228 - Extracted 1012 characters
+2025-04-07 21:19:10,235 - src.rag.document_loader - INFO - Processing page 101/228 - Extracted 895 characters
+2025-04-07 21:19:10,241 - src.rag.document_loader - INFO - Processing page 102/228 - Extracted 2100 characters
+2025-04-07 21:19:10,244 - src.rag.document_loader - INFO - Processing page 103/228 - Extracted 856 characters
+2025-04-07 21:19:10,249 - src.rag.document_loader - INFO - Processing page 104/228 - Extracted 1948 characters
+2025-04-07 21:19:10,269 - src.rag.document_loader - INFO - Processing page 105/228 - Extracted 1992 characters
+2025-04-07 21:19:10,269 - src.rag.document_loader - INFO - Processing page 106/228 - Extracted 121 characters
+2025-04-07 21:19:10,273 - src.rag.document_loader - INFO - Processing page 107/228 - Extracted 1399 characters
+2025-04-07 21:19:10,278 - src.rag.document_loader - INFO - Processing page 108/228 - Extracted 2092 characters
+2025-04-07 21:19:10,279 - src.rag.document_loader - INFO - Processing page 109/228 - Extracted 224 characters
+2025-04-07 21:19:10,284 - src.rag.document_loader - INFO - Processing page 110/228 - Extracted 2285 characters
+2025-04-07 21:19:10,286 - src.rag.document_loader - INFO - Processing page 111/228 - Extracted 510 characters
+2025-04-07 21:19:10,291 - src.rag.document_loader - INFO - Processing page 112/228 - Extracted 2175 characters
+2025-04-07 21:19:10,295 - src.rag.document_loader - INFO - Processing page 113/228 - Extracted 1348 characters
+2025-04-07 21:19:10,296 - src.rag.document_loader - INFO - Processing page 114/228 - Extracted 412 characters
+2025-04-07 21:19:10,301 - src.rag.document_loader - INFO - Processing page 115/228 - Extracted 2063 characters
+2025-04-07 21:19:10,302 - src.rag.document_loader - INFO - Processing page 116/228 - Extracted 461 characters
+2025-04-07 21:19:10,307 - src.rag.document_loader - INFO - Processing page 117/228 - Extracted 2005 characters
+2025-04-07 21:19:10,310 - src.rag.document_loader - INFO - Processing page 118/228 - Extracted 1077 characters
+2025-04-07 21:19:10,314 - src.rag.document_loader - INFO - Processing page 119/228 - Extracted 1433 characters
+2025-04-07 21:19:10,316 - src.rag.document_loader - INFO - Processing page 120/228 - Extracted 819 characters
+2025-04-07 21:19:10,318 - src.rag.document_loader - INFO - Processing page 121/228 - Extracted 953 characters
+2025-04-07 21:19:10,321 - src.rag.document_loader - INFO - Processing page 122/228 - Extracted 913 characters
+2025-04-07 21:19:10,325 - src.rag.document_loader - INFO - Processing page 123/228 - Extracted 1719 characters
+2025-04-07 21:19:10,329 - src.rag.document_loader - INFO - Processing page 124/228 - Extracted 1334 characters
+2025-04-07 21:19:10,334 - src.rag.document_loader - INFO - Processing page 125/228 - Extracted 2119 characters
+2025-04-07 21:19:10,338 - src.rag.document_loader - INFO - Processing page 126/228 - Extracted 1639 characters
+2025-04-07 21:19:10,341 - src.rag.document_loader - INFO - Processing page 127/228 - Extracted 1002 characters
+2025-04-07 21:19:10,345 - src.rag.document_loader - INFO - Processing page 128/228 - Extracted 1535 characters
+2025-04-07 21:19:10,348 - src.rag.document_loader - INFO - Processing page 129/228 - Extracted 1291 characters
+2025-04-07 21:19:10,353 - src.rag.document_loader - INFO - Processing page 130/228 - Extracted 1871 characters
+2025-04-07 21:19:10,357 - src.rag.document_loader - INFO - Processing page 131/228 - Extracted 1878 characters
+2025-04-07 21:19:10,358 - src.rag.document_loader - INFO - Processing page 132/228 - Extracted 60 characters
+2025-04-07 21:19:10,361 - src.rag.document_loader - INFO - Processing page 133/228 - Extracted 1242 characters
+2025-04-07 21:19:10,365 - src.rag.document_loader - INFO - Processing page 134/228 - Extracted 1517 characters
+2025-04-07 21:19:10,369 - src.rag.document_loader - INFO - Processing page 135/228 - Extracted 1314 characters
+2025-04-07 21:19:10,372 - src.rag.document_loader - INFO - Processing page 136/228 - Extracted 1302 characters
+2025-04-07 21:19:10,376 - src.rag.document_loader - INFO - Processing page 137/228 - Extracted 1524 characters
+2025-04-07 21:19:10,379 - src.rag.document_loader - INFO - Processing page 138/228 - Extracted 652 characters
+2025-04-07 21:19:10,382 - src.rag.document_loader - INFO - Processing page 139/228 - Extracted 1392 characters
+2025-04-07 21:19:10,387 - src.rag.document_loader - INFO - Processing page 140/228 - Extracted 1691 characters
+2025-04-07 21:19:10,391 - src.rag.document_loader - INFO - Processing page 141/228 - Extracted 1511 characters
+2025-04-07 21:19:10,394 - src.rag.document_loader - INFO - Processing page 142/228 - Extracted 1221 characters
+2025-04-07 21:19:10,400 - src.rag.document_loader - INFO - Processing page 143/228 - Extracted 2392 characters
+2025-04-07 21:19:10,402 - src.rag.document_loader - INFO - Processing page 144/228 - Extracted 628 characters
+2025-04-07 21:19:10,407 - src.rag.document_loader - INFO - Processing page 145/228 - Extracted 2096 characters
+2025-04-07 21:19:10,408 - src.rag.document_loader - INFO - Processing page 146/228 - Extracted 105 characters
+2025-04-07 21:19:10,410 - src.rag.document_loader - INFO - Processing page 147/228 - Extracted 1004 characters
+2025-04-07 21:19:10,414 - src.rag.document_loader - INFO - Processing page 148/228 - Extracted 1582 characters
+2025-04-07 21:19:10,419 - src.rag.document_loader - INFO - Processing page 149/228 - Extracted 2031 characters
+2025-04-07 21:19:10,423 - src.rag.document_loader - INFO - Processing page 150/228 - Extracted 1532 characters
+2025-04-07 21:19:10,426 - src.rag.document_loader - INFO - Processing page 151/228 - Extracted 1130 characters
+2025-04-07 21:19:10,429 - src.rag.document_loader - INFO - Processing page 152/228 - Extracted 1036 characters
+2025-04-07 21:19:10,435 - src.rag.document_loader - INFO - Processing page 153/228 - Extracted 2204 characters
+2025-04-07 21:19:10,440 - src.rag.document_loader - INFO - Processing page 154/228 - Extracted 2358 characters
+2025-04-07 21:19:10,443 - src.rag.document_loader - INFO - Processing page 155/228 - Extracted 973 characters
+2025-04-07 21:19:10,448 - src.rag.document_loader - INFO - Processing page 156/228 - Extracted 2003 characters
+2025-04-07 21:19:10,453 - src.rag.document_loader - INFO - Processing page 157/228 - Extracted 2022 characters
+2025-04-07 21:19:10,457 - src.rag.document_loader - INFO - Processing page 158/228 - Extracted 1659 characters
+2025-04-07 21:19:10,460 - src.rag.document_loader - INFO - Processing page 159/228 - Extracted 1277 characters
+2025-04-07 21:19:10,462 - src.rag.document_loader - INFO - Processing page 160/228 - Extracted 793 characters
+2025-04-07 21:19:10,467 - src.rag.document_loader - INFO - Processing page 161/228 - Extracted 1984 characters
+2025-04-07 21:19:10,473 - src.rag.document_loader - INFO - Processing page 162/228 - Extracted 2271 characters
+2025-04-07 21:19:10,477 - src.rag.document_loader - INFO - Processing page 163/228 - Extracted 1907 characters
+2025-04-07 21:19:10,481 - src.rag.document_loader - INFO - Processing page 164/228 - Extracted 1610 characters
+2025-04-07 21:19:10,486 - src.rag.document_loader - INFO - Processing page 165/228 - Extracted 1792 characters
+2025-04-07 21:19:10,490 - src.rag.document_loader - INFO - Processing page 166/228 - Extracted 1406 characters
+2025-04-07 21:19:10,495 - src.rag.document_loader - INFO - Processing page 167/228 - Extracted 1817 characters
+2025-04-07 21:19:10,499 - src.rag.document_loader - INFO - Processing page 168/228 - Extracted 1665 characters
+2025-04-07 21:19:10,500 - src.rag.document_loader - INFO - Processing page 169/228 - Extracted 39 characters
+2025-04-07 21:19:10,505 - src.rag.document_loader - INFO - Processing page 170/228 - Extracted 1948 characters
+2025-04-07 21:19:10,511 - src.rag.document_loader - INFO - Processing page 171/228 - Extracted 2178 characters
+2025-04-07 21:19:10,516 - src.rag.document_loader - INFO - Processing page 172/228 - Extracted 1825 characters
+2025-04-07 21:19:10,518 - src.rag.document_loader - INFO - Processing page 173/228 - Extracted 785 characters
+2025-04-07 21:19:10,521 - src.rag.document_loader - INFO - Processing page 174/228 - Extracted 991 characters
+2025-04-07 21:19:10,525 - src.rag.document_loader - INFO - Processing page 175/228 - Extracted 1686 characters
+2025-04-07 21:19:10,529 - src.rag.document_loader - INFO - Processing page 176/228 - Extracted 1657 characters
+2025-04-07 21:19:10,532 - src.rag.document_loader - INFO - Processing page 177/228 - Extracted 1045 characters
+2025-04-07 21:19:10,538 - src.rag.document_loader - INFO - Processing page 178/228 - Extracted 2060 characters
+2025-04-07 21:19:10,540 - src.rag.document_loader - INFO - Processing page 179/228 - Extracted 943 characters
+2025-04-07 21:19:10,545 - src.rag.document_loader - INFO - Processing page 180/228 - Extracted 1877 characters
+2025-04-07 21:19:10,548 - src.rag.document_loader - INFO - Processing page 181/228 - Extracted 1134 characters
+2025-04-07 21:19:10,552 - src.rag.document_loader - INFO - Processing page 182/228 - Extracted 1801 characters
+2025-04-07 21:19:10,555 - src.rag.document_loader - INFO - Processing page 183/228 - Extracted 1246 characters
+2025-04-07 21:19:10,560 - src.rag.document_loader - INFO - Processing page 184/228 - Extracted 1963 characters
+2025-04-07 21:19:10,563 - src.rag.document_loader - INFO - Processing page 185/228 - Extracted 864 characters
+2025-04-07 21:19:10,567 - src.rag.document_loader - INFO - Processing page 186/228 - Extracted 1639 characters
+2025-04-07 21:19:10,570 - src.rag.document_loader - INFO - Processing page 187/228 - Extracted 1282 characters
+2025-04-07 21:19:10,576 - src.rag.document_loader - INFO - Processing page 188/228 - Extracted 2227 characters
+2025-04-07 21:19:10,578 - src.rag.document_loader - INFO - Processing page 189/228 - Extracted 826 characters
+2025-04-07 21:19:10,583 - src.rag.document_loader - INFO - Processing page 190/228 - Extracted 2051 characters
+2025-04-07 21:19:10,585 - src.rag.document_loader - INFO - Processing page 191/228 - Extracted 1039 characters
+2025-04-07 21:19:10,590 - src.rag.document_loader - INFO - Processing page 192/228 - Extracted 1782 characters
+2025-04-07 21:19:10,593 - src.rag.document_loader - INFO - Processing page 193/228 - Extracted 1285 characters
+2025-04-07 21:19:10,598 - src.rag.document_loader - INFO - Processing page 194/228 - Extracted 1709 characters
+2025-04-07 21:19:10,601 - src.rag.document_loader - INFO - Processing page 195/228 - Extracted 1276 characters
+2025-04-07 21:19:10,604 - src.rag.document_loader - INFO - Processing page 196/228 - Extracted 949 characters
+2025-04-07 21:19:10,607 - src.rag.document_loader - INFO - Processing page 197/228 - Extracted 1414 characters
+2025-04-07 21:19:10,612 - src.rag.document_loader - INFO - Processing page 198/228 - Extracted 1843 characters
+2025-04-07 21:19:10,617 - src.rag.document_loader - INFO - Processing page 199/228 - Extracted 2241 characters
+2025-04-07 21:19:10,621 - src.rag.document_loader - INFO - Processing page 200/228 - Extracted 1730 characters
+2025-04-07 21:19:10,625 - src.rag.document_loader - INFO - Processing page 201/228 - Extracted 1367 characters
+2025-04-07 21:19:10,630 - src.rag.document_loader - INFO - Processing page 202/228 - Extracted 1588 characters
+2025-04-07 21:19:10,635 - src.rag.document_loader - INFO - Processing page 203/228 - Extracted 1864 characters
+2025-04-07 21:19:10,636 - src.rag.document_loader - INFO - Processing page 204/228 - Extracted 378 characters
+2025-04-07 21:19:10,642 - src.rag.document_loader - INFO - Processing page 205/228 - Extracted 1783 characters
+2025-04-07 21:19:10,645 - src.rag.document_loader - INFO - Processing page 206/228 - Extracted 1326 characters
+2025-04-07 21:19:10,651 - src.rag.document_loader - INFO - Processing page 207/228 - Extracted 2028 characters
+2025-04-07 21:19:10,652 - src.rag.document_loader - INFO - Processing page 208/228 - Extracted 381 characters
+2025-04-07 21:19:10,657 - src.rag.document_loader - INFO - Processing page 209/228 - Extracted 1813 characters
+2025-04-07 21:19:10,660 - src.rag.document_loader - INFO - Processing page 210/228 - Extracted 1410 characters
+2025-04-07 21:19:10,663 - src.rag.document_loader - INFO - Processing page 211/228 - Extracted 1081 characters
+2025-04-07 21:19:10,666 - src.rag.document_loader - INFO - Processing page 212/228 - Extracted 1253 characters
+2025-04-07 21:19:10,667 - src.rag.document_loader - INFO - Processing page 213/228 - Extracted 137 characters
+2025-04-07 21:19:10,671 - src.rag.document_loader - INFO - Processing page 214/228 - Extracted 1941 characters
+2025-04-07 21:19:10,675 - src.rag.document_loader - INFO - Processing page 215/228 - Extracted 1410 characters
+2025-04-07 21:19:10,679 - src.rag.document_loader - INFO - Processing page 216/228 - Extracted 1575 characters
+2025-04-07 21:19:10,685 - src.rag.document_loader - INFO - Processing page 217/228 - Extracted 2306 characters
+2025-04-07 21:19:10,691 - src.rag.document_loader - INFO - Processing page 218/228 - Extracted 2438 characters
+2025-04-07 21:19:10,698 - src.rag.document_loader - INFO - Processing page 219/228 - Extracted 2417 characters
+2025-04-07 21:19:10,703 - src.rag.document_loader - INFO - Processing page 220/228 - Extracted 2258 characters
+2025-04-07 21:19:10,709 - src.rag.document_loader - INFO - Processing page 221/228 - Extracted 2342 characters
+2025-04-07 21:19:10,715 - src.rag.document_loader - INFO - Processing page 222/228 - Extracted 2405 characters
+2025-04-07 21:19:10,721 - src.rag.document_loader - INFO - Processing page 223/228 - Extracted 2287 characters
+2025-04-07 21:19:10,727 - src.rag.document_loader - INFO - Processing page 224/228 - Extracted 2429 characters
+2025-04-07 21:19:10,732 - src.rag.document_loader - INFO - Processing page 225/228 - Extracted 1994 characters
+2025-04-07 21:19:10,735 - src.rag.document_loader - INFO - Processing page 226/228 - Extracted 1068 characters
+2025-04-07 21:19:10,738 - src.rag.document_loader - INFO - Processing page 227/228 - Extracted 1306 characters
+2025-04-07 21:19:10,739 - src.rag.document_loader - INFO - Processing page 228/228 - Extracted 61 characters
+2025-04-07 21:19:10,739 - src.rag.document_loader - INFO - Total text extracted: 325294 characters
+2025-04-07 21:19:10,739 - src.rag.document_loader - INFO - Extracting beat definitions from text...
+2025-04-07 21:19:10,751 - src.rag.document_loader - INFO - Extracted beat: All Is Lost (65392 chars)
+2025-04-07 21:19:10,752 - src.rag.document_loader - INFO - Extracted beat: Catalyst (13424 chars)
+2025-04-07 21:19:10,752 - src.rag.document_loader - INFO - Extracted beat: Bad Guys Close In (4946 chars)
+2025-04-07 21:19:10,752 - src.rag.document_loader - INFO - Extracted beat: Dark Night of the Soul (4852 chars)
+2025-04-07 21:19:10,752 - src.rag.document_loader - INFO - Extracted beat: Opening Image (341 chars)
+2025-04-07 21:19:10,752 - src.rag.document_loader - INFO - Extracted beat: Theme Stated (899 chars)
+2025-04-07 21:19:10,752 - src.rag.document_loader - INFO - Extracted beat: Catalyst (628 chars)
+2025-04-07 21:19:10,752 - src.rag.document_loader - INFO - Extracted beat: Debate (458 chars)
+2025-04-07 21:19:10,752 - src.rag.document_loader - INFO - Extracted beat: Fun and Games (406 chars)
+2025-04-07 21:19:10,752 - src.rag.document_loader - INFO - Extracted beat: B Story (587 chars)
+2025-04-07 21:19:10,753 - src.rag.document_loader - INFO - Extracted beat: Midpoint (537 chars)
+2025-04-07 21:19:10,753 - src.rag.document_loader - INFO - Extracted beat: All Is Lost (479 chars)
+2025-04-07 21:19:10,753 - src.rag.document_loader - INFO - Extracted beat: Dark Night of the Soul (450 chars)
+2025-04-07 21:19:10,753 - src.rag.document_loader - INFO - Extracted beat: Finale (230 chars)
+2025-04-07 21:19:10,753 - src.rag.document_loader - INFO - Extracted beat: Theme Stated (279 chars)
+2025-04-07 21:19:10,762 - src.rag.document_loader - INFO - Extracted beat: Final Image (154380 chars)
+2025-04-07 21:19:10,762 - src.rag.document_loader - INFO - Total beats extracted: 16
+2025-04-07 21:19:10,762 - src.rag.document_loader - WARNING - Error checking existing collections: 'VectorStore' object has no attribute 'list_collections'
+2025-04-07 21:19:10,763 - __main__ - ERROR - Error re-ingesting framework document: Collection [save_the_cat_beats] already exists
+2025-04-07 21:19:33,434 - __main__ - INFO - Starting re-ingestion of Save the Cat framework document
+2025-04-07 21:19:33,461 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-07 21:19:33,485 - __main__ - INFO - Re-ingesting framework document from data/save_the_cat.pdf
+2025-04-07 21:19:33,485 - src.rag.document_loader - INFO - Loading framework document: data/save_the_cat.pdf
+2025-04-07 21:19:33,495 - src.rag.document_loader - INFO - Total pages in PDF: 228
+2025-04-07 21:19:33,495 - src.rag.document_loader - INFO - Processing page 1/228 - Extracted 0 characters
+2025-04-07 21:19:33,498 - src.rag.document_loader - INFO - Processing page 2/228 - Extracted 377 characters
+2025-04-07 21:19:33,498 - src.rag.document_loader - INFO - Processing page 3/228 - Extracted 0 characters
+2025-04-07 21:19:33,502 - src.rag.document_loader - INFO - Processing page 4/228 - Extracted 1508 characters
+2025-04-07 21:19:33,505 - src.rag.document_loader - INFO - Processing page 5/228 - Extracted 1459 characters
+2025-04-07 21:19:33,508 - src.rag.document_loader - INFO - Processing page 6/228 - Extracted 790 characters
+2025-04-07 21:19:33,508 - src.rag.document_loader - INFO - Processing page 7/228 - Extracted 0 characters
+2025-04-07 21:19:33,509 - src.rag.document_loader - INFO - Processing page 8/228 - Extracted 752 characters
+2025-04-07 21:19:33,510 - src.rag.document_loader - INFO - Processing page 9/228 - Extracted 196 characters
+2025-04-07 21:19:33,513 - src.rag.document_loader - INFO - Processing page 10/228 - Extracted 1128 characters
+2025-04-07 21:19:33,517 - src.rag.document_loader - INFO - Processing page 11/228 - Extracted 1468 characters
+2025-04-07 21:19:33,518 - src.rag.document_loader - INFO - Processing page 12/228 - Extracted 107 characters
+2025-04-07 21:19:33,520 - src.rag.document_loader - INFO - Processing page 13/228 - Extracted 800 characters
+2025-04-07 21:19:33,525 - src.rag.document_loader - INFO - Processing page 14/228 - Extracted 1757 characters
+2025-04-07 21:19:33,530 - src.rag.document_loader - INFO - Processing page 15/228 - Extracted 1962 characters
+2025-04-07 21:19:33,533 - src.rag.document_loader - INFO - Processing page 16/228 - Extracted 1148 characters
+2025-04-07 21:19:33,537 - src.rag.document_loader - INFO - Processing page 17/228 - Extracted 1961 characters
+2025-04-07 21:19:33,542 - src.rag.document_loader - INFO - Processing page 18/228 - Extracted 2143 characters
+2025-04-07 21:19:33,547 - src.rag.document_loader - INFO - Processing page 19/228 - Extracted 1802 characters
+2025-04-07 21:19:33,552 - src.rag.document_loader - INFO - Processing page 20/228 - Extracted 2180 characters
+2025-04-07 21:19:33,554 - src.rag.document_loader - INFO - Processing page 21/228 - Extracted 435 characters
+2025-04-07 21:19:33,556 - src.rag.document_loader - INFO - Processing page 22/228 - Extracted 1100 characters
+2025-04-07 21:19:33,561 - src.rag.document_loader - INFO - Processing page 23/228 - Extracted 1654 characters
+2025-04-07 21:19:33,566 - src.rag.document_loader - INFO - Processing page 24/228 - Extracted 2072 characters
+2025-04-07 21:19:33,566 - src.rag.document_loader - INFO - Processing page 25/228 - Extracted 230 characters
+2025-04-07 21:19:33,571 - src.rag.document_loader - INFO - Processing page 26/228 - Extracted 1874 characters
+2025-04-07 21:19:33,573 - src.rag.document_loader - INFO - Processing page 27/228 - Extracted 698 characters
+2025-04-07 21:19:33,578 - src.rag.document_loader - INFO - Processing page 28/228 - Extracted 1740 characters
+2025-04-07 21:19:33,578 - src.rag.document_loader - INFO - Processing page 29/228 - Extracted 82 characters
+2025-04-07 21:19:33,583 - src.rag.document_loader - INFO - Processing page 30/228 - Extracted 2048 characters
+2025-04-07 21:19:33,587 - src.rag.document_loader - INFO - Processing page 31/228 - Extracted 1521 characters
+2025-04-07 21:19:33,592 - src.rag.document_loader - INFO - Processing page 32/228 - Extracted 1798 characters
+2025-04-07 21:19:33,595 - src.rag.document_loader - INFO - Processing page 33/228 - Extracted 1040 characters
+2025-04-07 21:19:33,597 - src.rag.document_loader - INFO - Processing page 34/228 - Extracted 956 characters
+2025-04-07 21:19:33,602 - src.rag.document_loader - INFO - Processing page 35/228 - Extracted 2110 characters
+2025-04-07 21:19:33,605 - src.rag.document_loader - INFO - Processing page 36/228 - Extracted 1358 characters
+2025-04-07 21:19:33,608 - src.rag.document_loader - INFO - Processing page 37/228 - Extracted 1429 characters
+2025-04-07 21:19:33,609 - src.rag.document_loader - INFO - Processing page 38/228 - Extracted 76 characters
+2025-04-07 21:19:33,614 - src.rag.document_loader - INFO - Processing page 39/228 - Extracted 1894 characters
+2025-04-07 21:19:33,618 - src.rag.document_loader - INFO - Processing page 40/228 - Extracted 1740 characters
+2025-04-07 21:19:33,623 - src.rag.document_loader - INFO - Processing page 41/228 - Extracted 1741 characters
+2025-04-07 21:19:33,627 - src.rag.document_loader - INFO - Processing page 42/228 - Extracted 1586 characters
+2025-04-07 21:19:33,628 - src.rag.document_loader - INFO - Processing page 43/228 - Extracted 459 characters
+2025-04-07 21:19:33,631 - src.rag.document_loader - INFO - Processing page 44/228 - Extracted 1006 characters
+2025-04-07 21:19:33,635 - src.rag.document_loader - INFO - Processing page 45/228 - Extracted 1786 characters
+2025-04-07 21:19:33,639 - src.rag.document_loader - INFO - Processing page 46/228 - Extracted 1569 characters
+2025-04-07 21:19:33,644 - src.rag.document_loader - INFO - Processing page 47/228 - Extracted 2024 characters
+2025-04-07 21:19:33,649 - src.rag.document_loader - INFO - Processing page 48/228 - Extracted 1633 characters
+2025-04-07 21:19:33,655 - src.rag.document_loader - INFO - Processing page 49/228 - Extracted 2100 characters
+2025-04-07 21:19:33,658 - src.rag.document_loader - INFO - Processing page 50/228 - Extracted 1335 characters
+2025-04-07 21:19:33,664 - src.rag.document_loader - INFO - Processing page 51/228 - Extracted 2124 characters
+2025-04-07 21:19:33,666 - src.rag.document_loader - INFO - Processing page 52/228 - Extracted 779 characters
+2025-04-07 21:19:33,671 - src.rag.document_loader - INFO - Processing page 53/228 - Extracted 2112 characters
+2025-04-07 21:19:33,676 - src.rag.document_loader - INFO - Processing page 54/228 - Extracted 1924 characters
+2025-04-07 21:19:33,681 - src.rag.document_loader - INFO - Processing page 55/228 - Extracted 1999 characters
+2025-04-07 21:19:33,681 - src.rag.document_loader - INFO - Processing page 56/228 - Extracted 87 characters
+2025-04-07 21:19:33,686 - src.rag.document_loader - INFO - Processing page 57/228 - Extracted 2200 characters
+2025-04-07 21:19:33,688 - src.rag.document_loader - INFO - Processing page 58/228 - Extracted 416 characters
+2025-04-07 21:19:33,694 - src.rag.document_loader - INFO - Processing page 59/228 - Extracted 2336 characters
+2025-04-07 21:19:33,697 - src.rag.document_loader - INFO - Processing page 60/228 - Extracted 1315 characters
+2025-04-07 21:19:33,701 - src.rag.document_loader - INFO - Processing page 61/228 - Extracted 1826 characters
+2025-04-07 21:19:33,706 - src.rag.document_loader - INFO - Processing page 62/228 - Extracted 2017 characters
+2025-04-07 21:19:33,707 - src.rag.document_loader - INFO - Processing page 63/228 - Extracted 393 characters
+2025-04-07 21:19:33,713 - src.rag.document_loader - INFO - Processing page 64/228 - Extracted 2158 characters
+2025-04-07 21:19:33,715 - src.rag.document_loader - INFO - Processing page 65/228 - Extracted 869 characters
+2025-04-07 21:19:33,720 - src.rag.document_loader - INFO - Processing page 66/228 - Extracted 2243 characters
+2025-04-07 21:19:33,722 - src.rag.document_loader - INFO - Processing page 67/228 - Extracted 742 characters
+2025-04-07 21:19:33,727 - src.rag.document_loader - INFO - Processing page 68/228 - Extracted 1911 characters
+2025-04-07 21:19:33,732 - src.rag.document_loader - INFO - Processing page 69/228 - Extracted 2101 characters
+2025-04-07 21:19:33,737 - src.rag.document_loader - INFO - Processing page 70/228 - Extracted 1904 characters
+2025-04-07 21:19:33,738 - src.rag.document_loader - INFO - Processing page 71/228 - Extracted 430 characters
+2025-04-07 21:19:33,741 - src.rag.document_loader - INFO - Processing page 72/228 - Extracted 1100 characters
+2025-04-07 21:19:33,745 - src.rag.document_loader - INFO - Processing page 73/228 - Extracted 1466 characters
+2025-04-07 21:19:33,750 - src.rag.document_loader - INFO - Processing page 74/228 - Extracted 2072 characters
+2025-04-07 21:19:33,754 - src.rag.document_loader - INFO - Processing page 75/228 - Extracted 1237 characters
+2025-04-07 21:19:33,759 - src.rag.document_loader - INFO - Processing page 76/228 - Extracted 2151 characters
+2025-04-07 21:19:33,765 - src.rag.document_loader - INFO - Processing page 77/228 - Extracted 2203 characters
+2025-04-07 21:19:33,770 - src.rag.document_loader - INFO - Processing page 78/228 - Extracted 2237 characters
+2025-04-07 21:19:33,770 - src.rag.document_loader - INFO - Processing page 79/228 - Extracted 35 characters
+2025-04-07 21:19:33,774 - src.rag.document_loader - INFO - Processing page 80/228 - Extracted 1514 characters
+2025-04-07 21:19:33,778 - src.rag.document_loader - INFO - Processing page 81/228 - Extracted 1555 characters
+2025-04-07 21:19:33,783 - src.rag.document_loader - INFO - Processing page 82/228 - Extracted 1565 characters
+2025-04-07 21:19:33,785 - src.rag.document_loader - INFO - Processing page 83/228 - Extracted 938 characters
+2025-04-07 21:19:33,789 - src.rag.document_loader - INFO - Processing page 84/228 - Extracted 1586 characters
+2025-04-07 21:19:33,794 - src.rag.document_loader - INFO - Processing page 85/228 - Extracted 2009 characters
+2025-04-07 21:19:33,795 - src.rag.document_loader - INFO - Processing page 86/228 - Extracted 167 characters
+2025-04-07 21:19:33,800 - src.rag.document_loader - INFO - Processing page 87/228 - Extracted 1846 characters
+2025-04-07 21:19:33,806 - src.rag.document_loader - INFO - Processing page 88/228 - Extracted 2268 characters
+2025-04-07 21:19:33,810 - src.rag.document_loader - INFO - Processing page 89/228 - Extracted 1495 characters
+2025-04-07 21:19:33,815 - src.rag.document_loader - INFO - Processing page 90/228 - Extracted 1970 characters
+2025-04-07 21:19:33,819 - src.rag.document_loader - INFO - Processing page 91/228 - Extracted 1768 characters
+2025-04-07 21:19:33,820 - src.rag.document_loader - INFO - Processing page 92/228 - Extracted 266 characters
+2025-04-07 21:19:33,823 - src.rag.document_loader - INFO - Processing page 93/228 - Extracted 997 characters
+2025-04-07 21:19:33,824 - src.rag.document_loader - INFO - Processing page 94/228 - Extracted 209 characters
+2025-04-07 21:19:33,830 - src.rag.document_loader - INFO - Processing page 95/228 - Extracted 1952 characters
+2025-04-07 21:19:33,833 - src.rag.document_loader - INFO - Processing page 96/228 - Extracted 1163 characters
+2025-04-07 21:19:33,836 - src.rag.document_loader - INFO - Processing page 97/228 - Extracted 929 characters
+2025-04-07 21:19:33,840 - src.rag.document_loader - INFO - Processing page 98/228 - Extracted 1504 characters
+2025-04-07 21:19:33,845 - src.rag.document_loader - INFO - Processing page 99/228 - Extracted 2181 characters
+2025-04-07 21:19:33,848 - src.rag.document_loader - INFO - Processing page 100/228 - Extracted 1012 characters
+2025-04-07 21:19:33,850 - src.rag.document_loader - INFO - Processing page 101/228 - Extracted 895 characters
+2025-04-07 21:19:33,856 - src.rag.document_loader - INFO - Processing page 102/228 - Extracted 2100 characters
+2025-04-07 21:19:33,859 - src.rag.document_loader - INFO - Processing page 103/228 - Extracted 856 characters
+2025-04-07 21:19:33,865 - src.rag.document_loader - INFO - Processing page 104/228 - Extracted 1948 characters
+2025-04-07 21:19:33,888 - src.rag.document_loader - INFO - Processing page 105/228 - Extracted 1992 characters
+2025-04-07 21:19:33,889 - src.rag.document_loader - INFO - Processing page 106/228 - Extracted 121 characters
+2025-04-07 21:19:33,892 - src.rag.document_loader - INFO - Processing page 107/228 - Extracted 1399 characters
+2025-04-07 21:19:33,898 - src.rag.document_loader - INFO - Processing page 108/228 - Extracted 2092 characters
+2025-04-07 21:19:33,899 - src.rag.document_loader - INFO - Processing page 109/228 - Extracted 224 characters
+2025-04-07 21:19:33,905 - src.rag.document_loader - INFO - Processing page 110/228 - Extracted 2285 characters
+2025-04-07 21:19:33,907 - src.rag.document_loader - INFO - Processing page 111/228 - Extracted 510 characters
+2025-04-07 21:19:33,913 - src.rag.document_loader - INFO - Processing page 112/228 - Extracted 2175 characters
+2025-04-07 21:19:33,916 - src.rag.document_loader - INFO - Processing page 113/228 - Extracted 1348 characters
+2025-04-07 21:19:33,917 - src.rag.document_loader - INFO - Processing page 114/228 - Extracted 412 characters
+2025-04-07 21:19:33,922 - src.rag.document_loader - INFO - Processing page 115/228 - Extracted 2063 characters
+2025-04-07 21:19:33,924 - src.rag.document_loader - INFO - Processing page 116/228 - Extracted 461 characters
+2025-04-07 21:19:33,929 - src.rag.document_loader - INFO - Processing page 117/228 - Extracted 2005 characters
+2025-04-07 21:19:33,932 - src.rag.document_loader - INFO - Processing page 118/228 - Extracted 1077 characters
+2025-04-07 21:19:33,935 - src.rag.document_loader - INFO - Processing page 119/228 - Extracted 1433 characters
+2025-04-07 21:19:33,937 - src.rag.document_loader - INFO - Processing page 120/228 - Extracted 819 characters
+2025-04-07 21:19:33,940 - src.rag.document_loader - INFO - Processing page 121/228 - Extracted 953 characters
+2025-04-07 21:19:33,942 - src.rag.document_loader - INFO - Processing page 122/228 - Extracted 913 characters
+2025-04-07 21:19:33,947 - src.rag.document_loader - INFO - Processing page 123/228 - Extracted 1719 characters
+2025-04-07 21:19:33,950 - src.rag.document_loader - INFO - Processing page 124/228 - Extracted 1334 characters
+2025-04-07 21:19:33,955 - src.rag.document_loader - INFO - Processing page 125/228 - Extracted 2119 characters
+2025-04-07 21:19:33,959 - src.rag.document_loader - INFO - Processing page 126/228 - Extracted 1639 characters
+2025-04-07 21:19:33,962 - src.rag.document_loader - INFO - Processing page 127/228 - Extracted 1002 characters
+2025-04-07 21:19:33,966 - src.rag.document_loader - INFO - Processing page 128/228 - Extracted 1535 characters
+2025-04-07 21:19:33,969 - src.rag.document_loader - INFO - Processing page 129/228 - Extracted 1291 characters
+2025-04-07 21:19:33,974 - src.rag.document_loader - INFO - Processing page 130/228 - Extracted 1871 characters
+2025-04-07 21:19:33,978 - src.rag.document_loader - INFO - Processing page 131/228 - Extracted 1878 characters
+2025-04-07 21:19:33,979 - src.rag.document_loader - INFO - Processing page 132/228 - Extracted 60 characters
+2025-04-07 21:19:33,982 - src.rag.document_loader - INFO - Processing page 133/228 - Extracted 1242 characters
+2025-04-07 21:19:33,986 - src.rag.document_loader - INFO - Processing page 134/228 - Extracted 1517 characters
+2025-04-07 21:19:33,990 - src.rag.document_loader - INFO - Processing page 135/228 - Extracted 1314 characters
+2025-04-07 21:19:33,993 - src.rag.document_loader - INFO - Processing page 136/228 - Extracted 1302 characters
+2025-04-07 21:19:33,997 - src.rag.document_loader - INFO - Processing page 137/228 - Extracted 1524 characters
+2025-04-07 21:19:33,999 - src.rag.document_loader - INFO - Processing page 138/228 - Extracted 652 characters
+2025-04-07 21:19:34,003 - src.rag.document_loader - INFO - Processing page 139/228 - Extracted 1392 characters
+2025-04-07 21:19:34,008 - src.rag.document_loader - INFO - Processing page 140/228 - Extracted 1691 characters
+2025-04-07 21:19:34,011 - src.rag.document_loader - INFO - Processing page 141/228 - Extracted 1511 characters
+2025-04-07 21:19:34,015 - src.rag.document_loader - INFO - Processing page 142/228 - Extracted 1221 characters
+2025-04-07 21:19:34,021 - src.rag.document_loader - INFO - Processing page 143/228 - Extracted 2392 characters
+2025-04-07 21:19:34,023 - src.rag.document_loader - INFO - Processing page 144/228 - Extracted 628 characters
+2025-04-07 21:19:34,028 - src.rag.document_loader - INFO - Processing page 145/228 - Extracted 2096 characters
+2025-04-07 21:19:34,029 - src.rag.document_loader - INFO - Processing page 146/228 - Extracted 105 characters
+2025-04-07 21:19:34,031 - src.rag.document_loader - INFO - Processing page 147/228 - Extracted 1004 characters
+2025-04-07 21:19:34,035 - src.rag.document_loader - INFO - Processing page 148/228 - Extracted 1582 characters
+2025-04-07 21:19:34,040 - src.rag.document_loader - INFO - Processing page 149/228 - Extracted 2031 characters
+2025-04-07 21:19:34,044 - src.rag.document_loader - INFO - Processing page 150/228 - Extracted 1532 characters
+2025-04-07 21:19:34,047 - src.rag.document_loader - INFO - Processing page 151/228 - Extracted 1130 characters
+2025-04-07 21:19:34,049 - src.rag.document_loader - INFO - Processing page 152/228 - Extracted 1036 characters
+2025-04-07 21:19:34,055 - src.rag.document_loader - INFO - Processing page 153/228 - Extracted 2204 characters
+2025-04-07 21:19:34,061 - src.rag.document_loader - INFO - Processing page 154/228 - Extracted 2358 characters
+2025-04-07 21:19:34,063 - src.rag.document_loader - INFO - Processing page 155/228 - Extracted 973 characters
+2025-04-07 21:19:34,068 - src.rag.document_loader - INFO - Processing page 156/228 - Extracted 2003 characters
+2025-04-07 21:19:34,073 - src.rag.document_loader - INFO - Processing page 157/228 - Extracted 2022 characters
+2025-04-07 21:19:34,077 - src.rag.document_loader - INFO - Processing page 158/228 - Extracted 1659 characters
+2025-04-07 21:19:34,080 - src.rag.document_loader - INFO - Processing page 159/228 - Extracted 1277 characters
+2025-04-07 21:19:34,082 - src.rag.document_loader - INFO - Processing page 160/228 - Extracted 793 characters
+2025-04-07 21:19:34,087 - src.rag.document_loader - INFO - Processing page 161/228 - Extracted 1984 characters
+2025-04-07 21:19:34,093 - src.rag.document_loader - INFO - Processing page 162/228 - Extracted 2271 characters
+2025-04-07 21:19:34,098 - src.rag.document_loader - INFO - Processing page 163/228 - Extracted 1907 characters
+2025-04-07 21:19:34,103 - src.rag.document_loader - INFO - Processing page 164/228 - Extracted 1610 characters
+2025-04-07 21:19:34,107 - src.rag.document_loader - INFO - Processing page 165/228 - Extracted 1792 characters
+2025-04-07 21:19:34,112 - src.rag.document_loader - INFO - Processing page 166/228 - Extracted 1406 characters
+2025-04-07 21:19:34,117 - src.rag.document_loader - INFO - Processing page 167/228 - Extracted 1817 characters
+2025-04-07 21:19:34,121 - src.rag.document_loader - INFO - Processing page 168/228 - Extracted 1665 characters
+2025-04-07 21:19:34,122 - src.rag.document_loader - INFO - Processing page 169/228 - Extracted 39 characters
+2025-04-07 21:19:34,127 - src.rag.document_loader - INFO - Processing page 170/228 - Extracted 1948 characters
+2025-04-07 21:19:34,132 - src.rag.document_loader - INFO - Processing page 171/228 - Extracted 2178 characters
+2025-04-07 21:19:34,137 - src.rag.document_loader - INFO - Processing page 172/228 - Extracted 1825 characters
+2025-04-07 21:19:34,139 - src.rag.document_loader - INFO - Processing page 173/228 - Extracted 785 characters
+2025-04-07 21:19:34,141 - src.rag.document_loader - INFO - Processing page 174/228 - Extracted 991 characters
+2025-04-07 21:19:34,145 - src.rag.document_loader - INFO - Processing page 175/228 - Extracted 1686 characters
+2025-04-07 21:19:34,150 - src.rag.document_loader - INFO - Processing page 176/228 - Extracted 1657 characters
+2025-04-07 21:19:34,153 - src.rag.document_loader - INFO - Processing page 177/228 - Extracted 1045 characters
+2025-04-07 21:19:34,158 - src.rag.document_loader - INFO - Processing page 178/228 - Extracted 2060 characters
+2025-04-07 21:19:34,161 - src.rag.document_loader - INFO - Processing page 179/228 - Extracted 943 characters
+2025-04-07 21:19:34,165 - src.rag.document_loader - INFO - Processing page 180/228 - Extracted 1877 characters
+2025-04-07 21:19:34,168 - src.rag.document_loader - INFO - Processing page 181/228 - Extracted 1134 characters
+2025-04-07 21:19:34,172 - src.rag.document_loader - INFO - Processing page 182/228 - Extracted 1801 characters
+2025-04-07 21:19:34,176 - src.rag.document_loader - INFO - Processing page 183/228 - Extracted 1246 characters
+2025-04-07 21:19:34,180 - src.rag.document_loader - INFO - Processing page 184/228 - Extracted 1963 characters
+2025-04-07 21:19:34,183 - src.rag.document_loader - INFO - Processing page 185/228 - Extracted 864 characters
+2025-04-07 21:19:34,187 - src.rag.document_loader - INFO - Processing page 186/228 - Extracted 1639 characters
+2025-04-07 21:19:34,190 - src.rag.document_loader - INFO - Processing page 187/228 - Extracted 1282 characters
+2025-04-07 21:19:34,196 - src.rag.document_loader - INFO - Processing page 188/228 - Extracted 2227 characters
+2025-04-07 21:19:34,198 - src.rag.document_loader - INFO - Processing page 189/228 - Extracted 826 characters
+2025-04-07 21:19:34,202 - src.rag.document_loader - INFO - Processing page 190/228 - Extracted 2051 characters
+2025-04-07 21:19:34,205 - src.rag.document_loader - INFO - Processing page 191/228 - Extracted 1039 characters
+2025-04-07 21:19:34,209 - src.rag.document_loader - INFO - Processing page 192/228 - Extracted 1782 characters
+2025-04-07 21:19:34,213 - src.rag.document_loader - INFO - Processing page 193/228 - Extracted 1285 characters
+2025-04-07 21:19:34,217 - src.rag.document_loader - INFO - Processing page 194/228 - Extracted 1709 characters
+2025-04-07 21:19:34,221 - src.rag.document_loader - INFO - Processing page 195/228 - Extracted 1276 characters
+2025-04-07 21:19:34,223 - src.rag.document_loader - INFO - Processing page 196/228 - Extracted 949 characters
+2025-04-07 21:19:34,226 - src.rag.document_loader - INFO - Processing page 197/228 - Extracted 1414 characters
+2025-04-07 21:19:34,231 - src.rag.document_loader - INFO - Processing page 198/228 - Extracted 1843 characters
+2025-04-07 21:19:34,237 - src.rag.document_loader - INFO - Processing page 199/228 - Extracted 2241 characters
+2025-04-07 21:19:34,241 - src.rag.document_loader - INFO - Processing page 200/228 - Extracted 1730 characters
+2025-04-07 21:19:34,244 - src.rag.document_loader - INFO - Processing page 201/228 - Extracted 1367 characters
+2025-04-07 21:19:34,249 - src.rag.document_loader - INFO - Processing page 202/228 - Extracted 1588 characters
+2025-04-07 21:19:34,254 - src.rag.document_loader - INFO - Processing page 203/228 - Extracted 1864 characters
+2025-04-07 21:19:34,255 - src.rag.document_loader - INFO - Processing page 204/228 - Extracted 378 characters
+2025-04-07 21:19:34,261 - src.rag.document_loader - INFO - Processing page 205/228 - Extracted 1783 characters
+2025-04-07 21:19:34,265 - src.rag.document_loader - INFO - Processing page 206/228 - Extracted 1326 characters
+2025-04-07 21:19:34,270 - src.rag.document_loader - INFO - Processing page 207/228 - Extracted 2028 characters
+2025-04-07 21:19:34,271 - src.rag.document_loader - INFO - Processing page 208/228 - Extracted 381 characters
+2025-04-07 21:19:34,276 - src.rag.document_loader - INFO - Processing page 209/228 - Extracted 1813 characters
+2025-04-07 21:19:34,279 - src.rag.document_loader - INFO - Processing page 210/228 - Extracted 1410 characters
+2025-04-07 21:19:34,282 - src.rag.document_loader - INFO - Processing page 211/228 - Extracted 1081 characters
+2025-04-07 21:19:34,285 - src.rag.document_loader - INFO - Processing page 212/228 - Extracted 1253 characters
+2025-04-07 21:19:34,286 - src.rag.document_loader - INFO - Processing page 213/228 - Extracted 137 characters
+2025-04-07 21:19:34,291 - src.rag.document_loader - INFO - Processing page 214/228 - Extracted 1941 characters
+2025-04-07 21:19:34,294 - src.rag.document_loader - INFO - Processing page 215/228 - Extracted 1410 characters
+2025-04-07 21:19:34,299 - src.rag.document_loader - INFO - Processing page 216/228 - Extracted 1575 characters
+2025-04-07 21:19:34,305 - src.rag.document_loader - INFO - Processing page 217/228 - Extracted 2306 characters
+2025-04-07 21:19:34,311 - src.rag.document_loader - INFO - Processing page 218/228 - Extracted 2438 characters
+2025-04-07 21:19:34,317 - src.rag.document_loader - INFO - Processing page 219/228 - Extracted 2417 characters
+2025-04-07 21:19:34,323 - src.rag.document_loader - INFO - Processing page 220/228 - Extracted 2258 characters
+2025-04-07 21:19:34,329 - src.rag.document_loader - INFO - Processing page 221/228 - Extracted 2342 characters
+2025-04-07 21:19:34,334 - src.rag.document_loader - INFO - Processing page 222/228 - Extracted 2405 characters
+2025-04-07 21:19:34,340 - src.rag.document_loader - INFO - Processing page 223/228 - Extracted 2287 characters
+2025-04-07 21:19:34,346 - src.rag.document_loader - INFO - Processing page 224/228 - Extracted 2429 characters
+2025-04-07 21:19:34,351 - src.rag.document_loader - INFO - Processing page 225/228 - Extracted 1994 characters
+2025-04-07 21:19:34,354 - src.rag.document_loader - INFO - Processing page 226/228 - Extracted 1068 characters
+2025-04-07 21:19:34,357 - src.rag.document_loader - INFO - Processing page 227/228 - Extracted 1306 characters
+2025-04-07 21:19:34,358 - src.rag.document_loader - INFO - Processing page 228/228 - Extracted 61 characters
+2025-04-07 21:19:34,358 - src.rag.document_loader - INFO - Total text extracted: 325294 characters
+2025-04-07 21:19:34,358 - src.rag.document_loader - INFO - Extracting beat definitions from text...
+2025-04-07 21:19:34,370 - src.rag.document_loader - INFO - Extracted beat: All Is Lost (65392 chars)
+2025-04-07 21:19:34,371 - src.rag.document_loader - INFO - Extracted beat: Catalyst (13424 chars)
+2025-04-07 21:19:34,371 - src.rag.document_loader - INFO - Extracted beat: Bad Guys Close In (4946 chars)
+2025-04-07 21:19:34,371 - src.rag.document_loader - INFO - Extracted beat: Dark Night of the Soul (4852 chars)
+2025-04-07 21:19:34,371 - src.rag.document_loader - INFO - Extracted beat: Opening Image (341 chars)
+2025-04-07 21:19:34,371 - src.rag.document_loader - INFO - Extracted beat: Theme Stated (899 chars)
+2025-04-07 21:19:34,371 - src.rag.document_loader - INFO - Extracted beat: Catalyst (628 chars)
+2025-04-07 21:19:34,371 - src.rag.document_loader - INFO - Extracted beat: Debate (458 chars)
+2025-04-07 21:19:34,371 - src.rag.document_loader - INFO - Extracted beat: Fun and Games (406 chars)
+2025-04-07 21:19:34,372 - src.rag.document_loader - INFO - Extracted beat: B Story (587 chars)
+2025-04-07 21:19:34,372 - src.rag.document_loader - INFO - Extracted beat: Midpoint (537 chars)
+2025-04-07 21:19:34,372 - src.rag.document_loader - INFO - Extracted beat: All Is Lost (479 chars)
+2025-04-07 21:19:34,372 - src.rag.document_loader - INFO - Extracted beat: Dark Night of the Soul (450 chars)
+2025-04-07 21:19:34,372 - src.rag.document_loader - INFO - Extracted beat: Finale (230 chars)
+2025-04-07 21:19:34,372 - src.rag.document_loader - INFO - Extracted beat: Theme Stated (279 chars)
+2025-04-07 21:19:34,381 - src.rag.document_loader - INFO - Extracted beat: Final Image (154380 chars)
+2025-04-07 21:19:34,381 - src.rag.document_loader - INFO - Total beats extracted: 16
+2025-04-07 21:19:34,381 - src.rag.document_loader - WARNING - Error checking existing collections: 'VectorStore' object has no attribute 'list_collections'
+2025-04-07 21:19:34,382 - __main__ - ERROR - Error re-ingesting framework document: Collection [save_the_cat] already exists

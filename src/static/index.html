@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Doctor - Beat Analysis</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background-color: #f5f7fa;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .tagline {
+            text-align: center;
+            color: #7f8c8d;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .input-section, .output-section {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .instructions {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .instructions ol {
+            margin: 10px 0;
+            padding-left: 25px;
+        }
+        .instructions li {
+            margin-bottom: 8px;
+        }
+        #outline-container {
+            position: relative;
+        }
+        #outline {
+            width: 100%;
+            min-height: 300px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 14px;
+            line-height: 1.6;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+        .control-panel {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+        }
+        .beat-selector {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            min-width: 200px;
+        }
+        .beat-info {
+            font-size: 13px;
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+        .selection-indicator {
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 15px;
+            display: none;
+        }
+        .selection-indicator.visible {
+            display: block;
+            background-color: #e8f4f8;
+            border-left: 4px solid #3498db;
+        }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: help;
+        }
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 300px;
+            background-color: #34495e;
+            color: #fff;
+            text-align: left;
+            border-radius: 6px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+        select, button {
+            padding: 10px 15px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+        select {
+            flex-grow: 1;
+            background-color: white;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 12px 24px;
+            transition: background-color 0.2s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        button:disabled {
+            background-color: #bdc3c7;
+            cursor: not-allowed;
+        }
+        .loading {
+            text-align: center;
+            margin: 20px 0;
+            display: none;
+        }
+        .spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border-left-color: #3498db;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .analysis-result {
+            margin-top: 20px;
+        }
+        .flag, .explain, .suggest {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 6px;
+        }
+        .flag {
+            background-color: #ffebee;
+            border-left: 4px solid #f44336;
+        }
+        .explain {
+            background-color: #e3f2fd;
+            border-left: 4px solid #2196f3;
+        }
+        .suggest {
+            background-color: #e8f5e9;
+            border-left: 4px solid #4caf50;
+        }
+        .suggest ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        .suggest li {
+            margin-bottom: 8px;
+        }
+        .beat-reference {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fafafa;
+            border-radius: 6px;
+            border-left: 4px solid #9c27b0;
+        }
+        .beat-reference h3 {
+            margin-top: 0;
+            color: #9c27b0;
+        }
+        .beat-reference-text {
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Script Doctor</h1>
+    <p class="tagline">AI-powered structural analysis for your screenplay outline</p>
+    
+    <div class="container">
+        <div class="input-section">
+            <div class="instructions">
+                <h3>How to Use Script Doctor:</h3>
+                <ol>
+                    <li>Paste your complete screenplay outline into the text area below.</li>
+                    <li>Select a portion of text you want to analyze by highlighting it directly in the text area.</li>
+                    <li>Choose the appropriate beat type from the dropdown menu.</li>
+                    <li>Click "Analyze Beat" to get structural feedback.</li>
+                </ol>
+            </div>
+            
+            <div id="outline-container">
+                <textarea id="outline" placeholder="Paste your full screenplay outline here..."></textarea>
+            </div>
+            
+            <div class="selection-indicator" id="selection-indicator">
+                <p><strong>Selected Text:</strong> <span id="selected-text">[No text selected]</span></p>
+            </div>
+            
+            <div class="control-panel">
+                <div class="beat-selector">
+                    <label for="beat-type">
+                        Beat Type 
+                        <span class="tooltip">ⓘ
+                            <span class="tooltiptext">
+                                Choose the beat type that best matches your selected text. Each beat type serves a 
+                                specific narrative function in the Save the Cat framework.
+                            </span>
+                        </span>
+                    </label>
+                    <select id="beat-type">
+                        <option value="">-- Select a beat type --</option>
+                        <option value="Opening Image">Opening Image - The first impression of the story</option>
+                        <option value="Theme Stated">Theme Stated - The story's thematic message</option>
+                        <option value="Setup">Setup - Establishing the characters and world</option>
+                        <option value="Catalyst">Catalyst - The inciting incident</option>
+                        <option value="Debate">Debate - The protagonist's resistance</option>
+                        <option value="Break into Two">Break into Two - Committing to the journey</option>
+                        <option value="B Story">B Story - The supporting relationship</option>
+                        <option value="Fun and Games">Fun and Games - The premise's promise</option>
+                        <option value="Midpoint">Midpoint - Raising the stakes</option>
+                        <option value="Bad Guys Close In">Bad Guys Close In - Mounting pressure</option>
+                        <option value="All Is Lost">All Is Lost - The darkest moment</option>
+                        <option value="Dark Night of the Soul">Dark Night of the Soul - The final despair</option>
+                        <option value="Break into Three">Break into Three - Finding the solution</option>
+                        <option value="Finale">Finale - Executing the solution</option>
+                        <option value="Final Image">Final Image - The transformed world</option>
+                    </select>
+                </div>
+                
+                <button id="analyze-btn" disabled>Analyze Beat</button>
+            </div>
+        </div>
+        
+        <div class="loading">
+            <div class="spinner"></div>
+            <p>Analyzing your beat...</p>
+        </div>
+        
+        <div class="output-section">
+            <h2>Analysis Results</h2>
+            <div id="analysis-result" class="analysis-result">
+                <div class="flag">
+                    <h3>Flag</h3>
+                    <p id="flag-text">Select a beat, choose its type, and click "Analyze Beat" to see results.</p>
+                </div>
+                
+                <div class="explain">
+                    <h3>Explain</h3>
+                    <p id="explain-text"></p>
+                </div>
+                
+                <div class="suggest">
+                    <h3>Suggest</h3>
+                    <ul id="suggest-list"></ul>
+                </div>
+                
+                <div class="beat-reference" id="beat-reference" style="display: none;">
+                    <h3>Beat Reference</h3>
+                    <p class="beat-reference-text" id="beat-reference-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const outlineTextarea = document.getElementById('outline');
+            const beatTypeSelect = document.getElementById('beat-type');
+            const analyzeBtn = document.getElementById('analyze-btn');
+            const loadingDiv = document.querySelector('.loading');
+            const flagText = document.getElementById('flag-text');
+            const explainText = document.getElementById('explain-text');
+            const suggestList = document.getElementById('suggest-list');
+            const selectionIndicator = document.getElementById('selection-indicator');
+            const selectedTextSpan = document.getElementById('selected-text');
+            const beatReference = document.getElementById('beat-reference');
+            const beatReferenceText = document.getElementById('beat-reference-text');
+            
+            let selectedText = '';
+            let selectionStart = 0;
+            let selectionEnd = 0;
+            
+            // Update the beat references when a beat type is selected
+            beatTypeSelect.addEventListener('change', function() {
+                const beatType = this.value;
+                updateBeatReference(beatType);
+                validateForm();
+            });
+            
+            // Check for text selection in the textarea
+            outlineTextarea.addEventListener('mouseup', updateSelectedText);
+            outlineTextarea.addEventListener('keyup', updateSelectedText);
+            
+            // Function to update the selected text and UI
+            function updateSelectedText() {
+                if (outlineTextarea.selectionStart !== outlineTextarea.selectionEnd) {
+                    selectionStart = outlineTextarea.selectionStart;
+                    selectionEnd = outlineTextarea.selectionEnd;
+                    selectedText = outlineTextarea.value.substring(selectionStart, selectionEnd);
+                    
+                    if (selectedText.trim() !== '') {
+                        selectedTextSpan.textContent = selectedText.length > 100 
+                            ? selectedText.substring(0, 100) + '...' 
+                            : selectedText;
+                        selectionIndicator.classList.add('visible');
+                        validateForm();
+                    }
+                }
+            }
+            
+            // Validate form and enable/disable the analyze button
+            function validateForm() {
+                const outlineText = outlineTextarea.value.trim();
+                const beatType = beatTypeSelect.value;
+                
+                analyzeBtn.disabled = !outlineText || !selectedText || !beatType;
+            }
+            
+            // Update the beat reference section
+            function updateBeatReference(beatType) {
+                if (!beatType) {
+                    beatReference.style.display = 'none';
+                    return;
+                }
+                
+                const beatDescriptions = {
+                    'Opening Image': 'The first image shown in the screenplay. It represents the starting point, the opposite of the final image, and establishes the tone and mood.',
+                    'Theme Stated': 'Usually stated in the first act by a character who represents the theme, it is a statement about what the story is really about at its heart.',
+                    'Setup': 'The introduction of the main character and their world before the journey begins. It establishes what needs to be changed or fixed in their life.',
+                    'Catalyst': 'The inciting incident that sets the story in motion and disrupts the main character\'s status quo.',
+                    'Debate': 'The main character wrestles with the question of whether to pursue the journey, often showing reluctance and fear.',
+                    'Break into Two': 'The main character makes a choice and commits to the journey, leaving the old world behind and entering a new world or situation.',
+                    'B Story': 'Often a love story or relationship that provides the main character with insights about the theme and their journey.',
+                    'Fun and Games': 'The "promise of the premise" - a series of scenes showing the main concept of the movie and the main character in their new world.',
+                    'Midpoint': 'A significant event that raises the stakes and forces the main character to recommit to their goal. Often marked by a false victory or false defeat.',
+                    'Bad Guys Close In': 'External and internal pressures mount, and things begin to fall apart for the main character.',
+                    'All Is Lost': 'The lowest point for the main character where they experience a major setback or loss, forcing them to confront their deepest fear.',
+                    'Dark Night of the Soul': 'The main character\'s moment of deep reflection and despair following the "All Is Lost" moment.',
+                    'Break into Three': 'The main character has an epiphany, finds a new idea or solution, and commits to a final attempt to achieve their goal.',
+                    'Finale': 'The main character executes their new plan, confronts the antagonist, and resolves the story.',
+                    'Final Image': 'The closing image that is the opposite of the opening image, showing how the journey has transformed the main character and their world.'
+                };
+                
+                if (beatDescriptions[beatType]) {
+                    beatReferenceText.textContent = beatDescriptions[beatType];
+                    beatReference.style.display = 'block';
+                } else {
+                    beatReference.style.display = 'none';
+                }
+            }
+            
+            // Handle analyze button click
+            analyzeBtn.addEventListener('click', async function() {
+                const outline = outlineTextarea.value.trim();
+                const beatType = beatTypeSelect.value;
+                
+                if (!outline) {
+                    alert('Please paste your screenplay outline.');
+                    return;
+                }
+                
+                if (!selectedText) {
+                    alert('Please select a beat to analyze by highlighting text in the outline.');
+                    return;
+                }
+                
+                if (!beatType) {
+                    alert('Please select a beat type.');
+                    return;
+                }
+                
+                // Show loading spinner
+                loadingDiv.style.display = 'block';
+                
+                try {
+                    const response = await fetch('/analyze', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            full_outline: outline,
+                            designated_beat: selectedText,
+                            beat_type: beatType,
+                            num_results: 3
+                        }),
+                    });
+                    
+                    if (!response.ok) {
+                        const errorData = await response.json();
+                        throw new Error(errorData.detail || `HTTP error! status: ${response.status}`);
+                    }
+                    
+                    const data = await response.json();
+                    
+                    // Display the analysis results
+                    flagText.textContent = data.analysis.flag;
+                    explainText.textContent = data.analysis.explanation;
+                    
+                    // Clear previous suggestions
+                    suggestList.innerHTML = '';
+                    
+                    // Add new suggestions
+                    data.analysis.suggestions.forEach(suggestion => {
+                        const li = document.createElement('li');
+                        li.textContent = suggestion;
+                        suggestList.appendChild(li);
+                    });
+                    
+                } catch (error) {
+                    console.error('Error:', error);
+                    alert(`An error occurred: ${error.message}`);
+                } finally {
+                    // Hide loading spinner
+                    loadingDiv.style.display = 'none';
+                }
+            });
+            
+            // Initial form validation
+            validateForm();
+        });
+    </script>
+</body>
+</html> 

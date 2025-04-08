@@ -1,0 +1,183 @@
+INFO:chromadb.telemetry.product.posthog:Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+INFO:__main__:Ingesting framework document from data/save_the_cat.pdf
+ERROR:__main__:Error ingesting framework document: Collection [save_the_cat] already exists
+INFO:     Will watch for changes in these directories: ['/Users/jacobgoldfine/Documents/script_dr']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [24056] using WatchFiles
+INFO:chromadb.telemetry.product.posthog:Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+INFO:src.rag.api:Successfully connected to ChromaDB collection
+INFO:     Started server process [24063]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:watchfiles.main:2 changes detected
+INFO:     127.0.0.1:56389 - "GET /health HTTP/1.1" 200 OK
+INFO:watchfiles.main:4 changes detected
+INFO:src.rag.api:Analyzing beat type: Catalyst
+INFO:src.rag.api:Designated beat length: 352 characters
+INFO:src.rag.api:Full outline length: 5950 characters
+INFO:chromadb.telemetry.product.posthog:Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+INFO:watchfiles.main:2 changes detected
+INFO:src.rag.analyzer:Querying for beat definition: Catalyst
+INFO:watchfiles.main:7 changes detected
+INFO:src.rag.analyzer:Query results: {'ids': [['5d4bd812-5328-4797-8829-cbfc30ab777e']], 'embeddings': None, 'documents': [['PDF content from data/save_the_cat.pdf']], 'uris': None, 'included': ['metadatas', 'documents', 'distances'], 'data': None, 'metadatas': [[{'chunk_index': 0, 'source': 'Save the Cat'}]], 'distances': [[1.4545823335647583]]}
+INFO:src.rag.analyzer:Generating functional analysis with Gemini
+INFO:src.rag.analyzer:Prompt length: 6820 characters
+INFO:watchfiles.main:4 changes detected
+INFO:src.rag.analyzer:Received response from Gemini API
+INFO:src.rag.analyzer:Functional analysis generated successfully: 4128 characters
+INFO:src.rag.analyzer:Identifying key elements in the beat
+INFO:src.rag.analyzer:Elements prompt length: 539 characters
+INFO:src.rag.analyzer:Received elements response from Gemini API
+INFO:src.rag.analyzer:Identified elements: *   **Sarah's artistic aspirations/abilities/portfolio:** The fact that she submitted work to an art program years ago and had good enough work to be accepted suggests she has a background and/or talent in art.
+*   **Sarah's mental/emotional state after the funeral:** The Catalyst occurs "six months after the funeral." We need to know who died, how close Sarah was to them, and how she's been coping. This gives the residency offer emotional weight.
+*   **Possible past interest or connection to Maine:** While not strictly necessary, a previous interest in Maine or the specific art school would make the offer more compelling and less random.
+
+INFO:src.rag.analyzer:Checking setups for identified elements
+INFO:src.rag.analyzer:Setup prompt length: 7717 characters
+INFO:src.rag.analyzer:Received setup check response from Gemini API
+INFO:src.rag.analyzer:Setup analysis successfully generated: 1359 characters
+INFO:src.rag.analyzer:Generating synthesis with Gemini
+INFO:src.rag.analyzer:Synthesis prompt length: 5876 characters
+INFO:src.rag.analyzer:Received response from Gemini API for synthesis
+INFO:src.rag.analyzer:Synthesis result raw text: **FLAG:** Lack of visceral emotional reaction to the Catalyst.
+
+**EXPLAIN:** The Catalyst is a crucial beat for grabbing the audience and immersing them in the protagonist's world. Save the Cat! emphasizes the importance of "saving the cat" – showing the protagonist's humanity and making them relatable. A strong, emotional reaction to the inciting incident endears Sarah to the audience and dramatically raises the stakes. Focusing on the informational content of the letter weakens this immediate connection and underplays the significant impact of the event.
+
+**SUGGEST:**
+
+1.  **Add sensory details:** Replace some of the objective description of the letter with Sarah's immediate physical and emotional reactions. Examples: "Her fingers trembled as she unfolded the crisp paper. The art school's logo swam before her eyes, a painful ghost from a life she thought she'd buried."
+2.  **Include a line of internal monologue:** Give the audience insight into Sarah's immediate thoughts and feelings. Examples: "Maine? An art residency? It felt like a lifetime ago she'd even dared to dream of something like this. A wave of nausea washed over her, followed by a sliver of hope."
+3.  **Use action to show, not tell:** Instead of stating she's surprised, *show* it. "The letter slipped from her numb fingers, fluttering to the floor. She stared at it, unseeing."
+
+INFO:src.rag.analyzer:Parsed FLAG: ** Lack of visceral emotional reaction to the Catalyst.
+
+**
+INFO:src.rag.analyzer:Parsed EXPLAIN: ** The Catalyst is a crucial beat for grabbing the audience and immersing them in the protagonist's world. Save the Cat! emphasizes the importance of "saving the cat" – showing the protagonist's humanity and making them relatable. A strong, emotional reaction to the inciting incident endears Sarah to the audience and dramatically raises the stakes. Focusing on the informational content of the letter weakens this immediate connection and underplays the significant impact of the event.
+
+**
+INFO:src.rag.analyzer:Parsed SUGGESTIONS: ['*', '**Add sensory details:** Replace some of the objective description of the letter with Sarah\'s immediate physical and emotional reactions. Examples: "Her fingers trembled as she unfolded the crisp paper. The art school\'s logo swam before her eyes, a painful ghost from a life she thought she\'d buried."', '**Include a line of internal monologue:** Give the audience insight into Sarah\'s immediate thoughts and feelings. Examples: "Maine? An art residency? It felt like a lifetime ago she\'d even dared to dream of something like this. A wave of nausea washed over her, followed by a sliver of hope."', '**Use action to show, not tell:** Instead of stating she\'s surprised, *show* it. "The letter slipped from her numb fingers, fluttering to the floor. She stared at it, unseeing."']
+INFO:     127.0.0.1:56421 - "POST /analyze HTTP/1.1" 200 OK
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:src.rag.api:Analyzing beat type: All Is Lost
+INFO:src.rag.api:Designated beat length: 5848 characters
+INFO:src.rag.api:Full outline length: 5889 characters
+INFO:watchfiles.main:2 changes detected
+INFO:src.rag.analyzer:Querying for beat definition: All Is Lost
+INFO:watchfiles.main:7 changes detected
+INFO:src.rag.analyzer:Query results: {'ids': [['5d4bd812-5328-4797-8829-cbfc30ab777e']], 'embeddings': None, 'documents': [['PDF content from data/save_the_cat.pdf']], 'uris': None, 'included': ['metadatas', 'documents', 'distances'], 'data': None, 'metadatas': [[{'chunk_index': 0, 'source': 'Save the Cat'}]], 'distances': [[1.4073567390441895]]}
+INFO:src.rag.analyzer:Generating functional analysis with Gemini
+INFO:src.rag.analyzer:Prompt length: 12255 characters
+INFO:src.rag.analyzer:Received response from Gemini API
+INFO:src.rag.analyzer:Functional analysis generated successfully: 6408 characters
+INFO:src.rag.analyzer:Identifying key elements in the beat
+INFO:src.rag.analyzer:Elements prompt length: 6035 characters
+INFO:src.rag.analyzer:Received elements response from Gemini API
+INFO:src.rag.analyzer:Identified elements: *   **Gabriela is Victor's sister:** This relationship informs Gabriela's motivations and adds weight to her initial distrust of Alex.
+*   **Victor gave an amulet to Gabriela:** This detail connects Victor to the village and motivates the elder to help Gabriela and Alex.
+*   **Lily is capable of using her phone to trace her father's call and alerting authorities:** This highlights Lily's intelligence and resourcefulness, making her intervention more believable.
+*   **The temple has guardians and is cursed:** This foreshadows the dangers within the temple and adds a layer of supernatural suspense.
+
+INFO:src.rag.analyzer:Checking setups for identified elements
+INFO:src.rag.analyzer:Setup prompt length: 7570 characters
+INFO:src.rag.analyzer:Received setup check response from Gemini API
+INFO:src.rag.analyzer:Setup analysis successfully generated: 3337 characters
+INFO:src.rag.analyzer:Generating synthesis with Gemini
+INFO:src.rag.analyzer:Synthesis prompt length: 10134 characters
+INFO:src.rag.analyzer:Received response from Gemini API for synthesis
+INFO:src.rag.analyzer:Synthesis result raw text: Okay, here's the breakdown of the "Dark Night of the Soul" and "Setup" analyses, formatted for a clear, actionable review:
+
+**DARK NIGHT OF THE SOUL REVIEW**
+
+**FLAG:** Lack of emotional depth and specificity weakens the character transformation.
+
+**EXPLAIN:** The "Dark Night of the Soul" is crucial (Save the Cat's "All Is Lost") for a character arc. It's where the protagonist confronts their flaws and re-commits to the "A story." This beat needs powerful emotional impact to sell Alex's transformation to the audience so they can believe in him in act 3. As the story is now, this beat lacks internal conflict, and misses opportunities to enhance the core themes of the screenplay, specifically related to family and purpose.
+
+**SUGGEST:**
+1.  **Visceral Details:** Replace general statements with specific, sensory details showing Alex's pain (e.g., tattered photograph, echoing sounds of rain mirroring isolation).
+2.  **Enhanced Hallucination:** Expand the Victor hallucination, giving Victor accusatory dialogue that challenges Alex's flaws; add visuals of the moment he was last seen.
+3. **Exploration of Family:** Include a moment where Alex hears his daughters voice, or has flashbacks of disappointing his family, to show what he has lost.
+
+**SETUP ANALYSIS REVIEW**
+
+**FLAG:** Missing setups diminish believability and emotional impact of later plot points.
+
+**EXPLAIN:** Proper setup ("Promise of the Premise," per Save the Cat) is essential for a satisfying story. When crucial elements like Lily's tech skills or the amulet appear late without prior foreshadowing, they feel contrived and detract from the audience's engagement. This will leave them dissatisfied when the ending comes around.
+
+**SUGGEST:**
+
+1.  **Amulet Setup:** Add a line in Act One where Gabriela shows Alex the amulet and says Victor gave it to her.
+2.  **Lily's Tech Skills Setup:** In Act One, add a brief scene of Lily tinkering with tech or hacking a game. OR, in the scene where Alex calls her from the jungle, have her say something about running a trace to make sure he is safe.
+3.  **Cursed Temple Setup:** In Act One during research, include a mention of local legends and curses connected to the Temple, which Alex dismisses. OR, when Alex and Gabriela find the abandoned camp, show them finding a local artifact with carvings of demonic guardians on it.
+
+INFO:src.rag.analyzer:Parsed FLAG: ** Lack of emotional depth and specificity weakens the character transformation.
+
+**
+INFO:src.rag.analyzer:Parsed EXPLAIN: ** The "Dark Night of the Soul" is crucial (Save the Cat's "All Is Lost") for a character arc. It's where the protagonist confronts their flaws and re-commits to the "A story." This beat needs powerful emotional impact to sell Alex's transformation to the audience so they can believe in him in act 3. As the story is now, this beat lacks internal conflict, and misses opportunities to enhance the core themes of the screenplay, specifically related to family and purpose.
+
+**
+INFO:src.rag.analyzer:Parsed SUGGESTIONS: ['*', "**Visceral Details:** Replace general statements with specific, sensory details showing Alex's pain (e.g., tattered photograph, echoing sounds of rain mirroring isolation).", "**Enhanced Hallucination:** Expand the Victor hallucination, giving Victor accusatory dialogue that challenges Alex's flaws; add visuals of the moment he was last seen.", '**Exploration of Family:** Include a moment where Alex hears his daughters voice, or has flashbacks of disappointing his family, to show what he has lost.', '*SETUP ANALYSIS REVIEW**', '*FLAG:** Missing setups diminish believability and emotional impact of later plot points.', '*EXPLAIN:** Proper setup ("Promise of the Premise," per Save the Cat) is essential for a satisfying story. When crucial elements like Lily\'s tech skills or the amulet appear late without prior foreshadowing, they feel contrived and detract from the audience\'s engagement. This will leave them dissatisfied when the ending comes around.', '*']
+INFO:     127.0.0.1:57155 - "POST /analyze HTTP/1.1" 200 OK
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:src.rag.api:Analyzing beat type: Midpoint
+INFO:src.rag.api:Designated beat length: 298 characters
+INFO:src.rag.api:Full outline length: 6385 characters
+INFO:watchfiles.main:2 changes detected
+INFO:src.rag.analyzer:Querying for beat definition: Midpoint
+INFO:watchfiles.main:7 changes detected
+INFO:src.rag.analyzer:Query results: {'ids': [['5d4bd812-5328-4797-8829-cbfc30ab777e']], 'embeddings': None, 'documents': [['PDF content from data/save_the_cat.pdf']], 'uris': None, 'included': ['metadatas', 'documents', 'distances'], 'data': None, 'metadatas': [[{'chunk_index': 0, 'source': 'Save the Cat'}]], 'distances': [[1.481074333190918]]}
+INFO:src.rag.analyzer:Generating functional analysis with Gemini
+INFO:src.rag.analyzer:Prompt length: 7201 characters
+INFO:src.rag.analyzer:Received response from Gemini API
+INFO:src.rag.analyzer:Functional analysis generated successfully: 7123 characters
+INFO:src.rag.analyzer:Identifying key elements in the beat
+INFO:src.rag.analyzer:Elements prompt length: 485 characters
+INFO:src.rag.analyzer:Received elements response from Gemini API
+INFO:src.rag.analyzer:Identified elements: Here are the story elements, character actions, or plot points from the Midpoint you provided that would likely need setup earlier in the story:
+
+*   **Eleanor's connection to the synthetic body:** The story needs to establish that Eleanor can inhabit and control a synthetic body. We need to see how this process works, its limitations, and any prior instances of her using it.
+
+*   **The existence and purpose of the crucial test:** The story needs to explain what the test is, its importance, and why Eleanor is involved.
+
+*   **The lab and its reliance on power:** The story should establish the lab as technologically advanced but also vulnerable to power outages, making the power failure a plausible event.
+
+*   **Colonel Reed's ambition and potential for manipulation:** We need to see Colonel Reed as someone who is ambitious, perhaps distrustful of Eleanor, and willing to exploit situations to advance his own agenda. We need hints that he may not have Eleanor's best interests at heart.
+
+*   **The concept of "protective custody"**: The story should foreshadow that Eleanor's original body would be vulnerable if she failed the test.
+
+*   **The definition of "breach of national security" in this context:** We need to know what actions or outcomes during the test would be considered a threat to national security.
+
+INFO:src.rag.analyzer:Checking setups for identified elements
+INFO:src.rag.analyzer:Setup prompt length: 9514 characters
+INFO:src.rag.analyzer:Received setup check response from Gemini API
+INFO:src.rag.analyzer:Setup analysis successfully generated: 5600 characters
+INFO:src.rag.analyzer:Generating synthesis with Gemini
+INFO:src.rag.analyzer:Synthesis prompt length: 13112 characters
+INFO:src.rag.analyzer:Received response from Gemini API for synthesis
+INFO:src.rag.analyzer:Synthesis result raw text: **FLAG:** Missing setup for the core technology: Eleanor's interface with the synthetic body.
+
+**EXPLAIN:** This is the linchpin of the story, directly affecting the "Catalyst" and the "Break into Two." Save the Cat emphasizes understanding the premise. If we don't understand Eleanor's baseline experience transferring to the body *before* the midpoint, the fact she's trapped doesn't land with sufficient impact. Is she a novice? A pro? We don't know. This weakens the "stakes" in Act Two.
+
+**SUGGEST:**
+1.  **"Opening Image" Scene:** Show Eleanor briefly transferring her consciousness in a controlled environment, performing a task, demonstrating competency (or initial struggles).
+2.  **Dialogue/Flashback:** Include a conversation where Eleanor explains the technology's history, focusing on her expertise and past experiences with similar interfaces.
+3.  **Preparation Ritual:** Depict Eleanor's preparations for the crucial test, highlighting the technical steps and demonstrating her comfort level (or anxiety) with the transfer process.
+
+INFO:src.rag.analyzer:Parsed FLAG: ** Missing setup for the core technology: Eleanor's interface with the synthetic body.
+
+**
+INFO:src.rag.analyzer:Parsed EXPLAIN: ** This is the linchpin of the story, directly affecting the "Catalyst" and the "Break into Two." Save the Cat emphasizes understanding the premise. If we don't understand Eleanor's baseline experience transferring to the body *before* the midpoint, the fact she's trapped doesn't land with sufficient impact. Is she a novice? A pro? We don't know. This weakens the "stakes" in Act Two.
+
+**
+INFO:src.rag.analyzer:Parsed SUGGESTIONS: ['*', '**"Opening Image" Scene:** Show Eleanor briefly transferring her consciousness in a controlled environment, performing a task, demonstrating competency (or initial struggles).', "**Dialogue/Flashback:** Include a conversation where Eleanor explains the technology's history, focusing on her expertise and past experiences with similar interfaces.", "**Preparation Ritual:** Depict Eleanor's preparations for the crucial test, highlighting the technical steps and demonstrating her comfort level (or anxiety) with the transfer process."]
+INFO:     127.0.0.1:57956 - "POST /analyze HTTP/1.1" 200 OK
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected

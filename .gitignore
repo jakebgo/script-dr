@@ -1,0 +1,28 @@
+# Python virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Environment variables
+.env
+
+# Database files
+*.db
+*.sqlite3
+
+# macOS system files
+.DS_Store
+
+# Output directories
+output/
+chroma_db/
+
+# Log files that might get large
+*.log 
