@@ -543,390 +543,156 @@ Based on performance testing, the following optimizations are recommended:
    - Add response caching for similar inputs
    - Consider asynchronous processing for non-blocking operation
 
-## User Acceptance Testing Framework
+## User Acceptance Testing Round 2
 
-The Script Doctor application includes a comprehensive User Acceptance Testing (UAT) framework to validate the application from an end-user perspective:
+### UAT Round 2 Overview
 
-### UAT Plan Structure
+The second round of User Acceptance Testing (UAT) is designed to validate the effectiveness of the remediation efforts implemented following UAT Round 1. The focus is on confirming that the critical issues identified in the first round have been successfully addressed:
 
-The UAT plan is documented in `uat_plan.md` and includes:
+1. UI/UX issues with the dual text area design
+2. Beat definition confusion (especially between "All Is Lost" and "Dark Night of the Soul")
+3. Analysis quality and relevance problems
 
-1. **Purpose and Scope**
-   - Validation of application functionality from user perspective
-   - Assessment of analysis quality and relevance
-   - Evaluation of usability and overall value
+### Test Environment
 
-2. **Test Environment Requirements**
-   - Browser and OS compatibility
-   - Network requirements
-   - Test data prerequisites
+The test environment for UAT Round 2 includes:
 
-3. **Test Scenarios**
-   - Basic Functionality: Core feature validation
-   - Analysis Quality Assessment: Evaluating accuracy and relevance
-   - Edge Cases and Error Handling: Testing resilience
-   - User Interface Usability: Assessing user experience
+- Application deployed at http://localhost:8000
+- Test data available in the `data/uat_samples/` directory:
+  - `well_structured_outline.txt`: A complete outline following Save the Cat principles closely
+  - `partially_structured_outline.txt`: An outline with some beats implemented well, others missing or weak
+  - `problematic_outline.txt`: An outline with intentional structural issues and missing setups
+- Test materials organized in the `uat_round2/` directory
 
-4. **Evaluation Criteria**
-   - Functionality: Features working as expected
-   - Analysis Quality: Accuracy, relevance, specificity, actionability
-   - Usability: Intuitiveness, efficiency, satisfaction
-   - Overall Value: Utility, time-saving, learning value
+### Test Cases
 
-### Test Data
+The UAT Round 2 includes eight targeted test cases across four scenarios:
 
-The UAT framework includes three sample screenplay outlines:
+#### Scenario 1: UI/UX Validation
+- **TC-R2-01**: Basic UI Workflow - Verify the redesigned UI (single text area) is intuitive
+- **TC-R2-02**: Visual Feedback Validation - Verify the visual feedback elements guide the user
 
-1. **Well-Structured Outline ("Second Chances")**
-   - A complete outline following Save the Cat principles closely
-   - All beat types properly implemented
-   - Clear character arcs and thematic elements
-   - Located at `data/uat_samples/well_structured_outline.txt`
+#### Scenario 2: Beat Definition Accuracy Validation
+- **TC-R2-03**: All Is Lost Beat Definition - Confirm the fix for All Is Lost beat definition retrieval
+- **TC-R2-04**: Dark Night of the Soul Beat Definition - Confirm the fix for Dark Night of the Soul beat definition
+- **TC-R2-05**: Well-Defined Beat (Midpoint) - Verify correct beat definition retrieval for a well-defined beat
 
-2. **Problematic Outline ("The Relic Hunter")**
-   - An outline with intentional structural issues
-   - Missing or weak Theme Stated beat
-   - Unclear B Story connection to the main plot
-   - Insufficient setup for Finale elements
-   - Located at `data/uat_samples/problematic_outline.txt`
+#### Scenario 3: Analysis Quality & Relevance Validation
+- **TC-R2-06**: All Is Lost Analysis Quality - Assess the quality and actionability of problematic beat analysis
+- **TC-R2-07**: Partially Structured Outline Analysis - Assess how well the system analyzes a beat with structural issues
 
-3. **Partially Structured Outline ("Quantum Shift")**
-   - An outline with some beats implemented well, others missing
-   - Strong Catalyst and Midpoint beats
-   - Weak or missing Theme Stated and B Story beats
-   - Located at `data/uat_samples/partially_structured_outline.txt`
+#### Scenario 4: Basic Regression Check
+- **TC-R2-08**: Catalyst Analysis (Regression) - Ensure remediation fixes haven't negatively impacted analysis
+
+### Evaluation Criteria
+
+The UAT Round 2 uses the following evaluation criteria:
+
+- **UI Usability**: Is the single text area and highlighting workflow significantly clearer and easier to use?
+- **Beat Definition Accuracy**: Does the analysis consistently reference the correct framework definition?
+- **Feedback Quality**: Is the output noticeably clearer, more relevant, and more actionable (rated on a 1-5 scale)?
+- **Stability**: Does the application perform without critical errors?
 
 ### Feedback Collection
 
-The UAT framework includes a standardized feedback form template:
+A standardized feedback form is used to collect consistent feedback from testers, including:
 
-```markdown
-## Functionality Rating (1-5 scale, 5 is best)
-| Aspect | Rating | Comments |
-|--------|--------|----------|
-| Text highlighting functionality | | |
-| Beat type selection | | |
-| Analysis generation | | |
-| Response time | | |
-| Error handling (if encountered) | | |
-
-## Analysis Quality Rating (1-5 scale, 5 is best)
-| Aspect | Rating | Comments |
-|--------|--------|----------|
-| Accuracy (correctly identified issues) | | |
-| Relevance (aligned with Save the Cat) | | |
-| Specificity (referenced outline elements) | | |
-| Actionability (suggestions were implementable) | | |
-| Insight (provided valuable perspective) | | |
-```
-
-### UAT Execution Approach
-
-The UAT will be executed using:
-- Prepared sample outlines with known structural characteristics
-- Simulated user interactions based on defined test cases
-- Systematic evaluation against established criteria
-- Documentation of system behavior and analysis results
-- Recommendations report based on findings
-
-This approach allows for comprehensive validation of the application's functionality and analysis quality without the time commitment of recruiting external testers.
+- Tester information (name, date, session, environment)
+- Test case information (ID, outline used, beat analyzed)
+- Rating sections for UI usability, beat definition accuracy, feedback quality, and stability
+- Specific questions about Round 1 issues being resolved
+- Open-ended feedback sections
 
 ### Success Criteria
 
-The UAT will be considered successful if:
-- All test scenarios can be executed successfully
-- Analysis results correctly identify structural issues in problematic outlines
-- The system provides actionable feedback aligned with Save the Cat principles
-- Analysis quality achieves at least a 3.5/5 average rating
-- Usability achieves at least a 4/5 average rating
+UAT Round 2 will be considered successful if:
 
-Upon completion of UAT, a recommendations report will be generated to guide future improvements and optimizations.
+1. Testers confirm the critical UI/UX confusion from Round 1 is resolved
+2. Testers confirm the confusion between "All Is Lost" / "Dark Night of the Soul" definitions/analysis is resolved
+3. Feedback Quality ratings show noticeable improvement (average score ≥ 3.5/5)
+4. No new critical bugs related to core functionality are introduced by the fixes
 
-### UAT Execution Results
+### UAT Documentation
 
-The UAT execution revealed several critical issues that need to be addressed before the application can be considered ready for general use:
+All UAT Round 2 materials are organized in the `uat_round2/` directory:
 
-#### Technical Issues
-- **Gemini API Integration**: The initial API model name format was incorrect ('gemini-2.0-flash' instead of 'models/gemini-2.0-flash'), causing API calls to fail with 422 Unprocessable Content errors
-- **Response Parsing**: The response parsing logic was too strict and couldn't handle variations in API response formatting
-- **Error Handling**: The application needed more comprehensive error handling throughout the system
+- `README.md`: Master document with overview and links
+- `preparation_checklist.md`: Status of preparation tasks
+- `test_guide.md`: Step-by-step instructions for each test case
+- `feedback_form.md`: Form for testers to document their observations
+- `key_fixes.md`: Summary of the remediation efforts being validated
+- `results_tracker.md`: Document for tracking and aggregating test results
+- `tester_assignments.md`: Detailed tester information and assignments
 
-#### UI/UX Issues
-- **Dual Text Area Design**: Users were confused by the requirement to paste their outline twice (once in the main textarea and again in the beat selection area)
-- **Highlighting Functionality**: The UI did not clearly explain that highlighting needed to be done in the secondary text area rather than the main outline area
-- **Unclear Workflow**: Users were uncertain about the correct sequence of actions to perform an analysis
+### Key Remediation Fixes Being Validated
 
-#### Beat Identification Issues
-- **Adjacent Beat Confusion**: The system misidentified "All Is Lost" as "Dark Night of the Soul" in the analysis
-- **Beat Definition Overlap**: The vector database retrieval didn't properly distinguish between adjacent beats in the framework
-- **Contextual Relevance**: Some analyses didn't properly reference the selected beat type, leading to generic feedback
+#### 1. UI/UX Improvements
+- Replaced dual-textarea design with a single text area and direct text highlighting
+- Added clear step-by-step instructions in the UI
+- Implemented selection confirmation indicator
+- Added visual feedback during processing
+- Created a beat reference section with descriptions
 
-#### Test Scenario Results
-- **Scenario 1 (Well-Structured/Catalyst)**: Initially failed due to API errors; passed after API integration fix
-- **Scenario 2 (Problematic/All Is Lost)**: Failed; beat was misidentified and analysis didn't address structural issues
-- **Scenario 3 (Partially Structured/Midpoint)**: Passed with good identification of missing setup issues
+#### 2. Beat Definition Accuracy
+- Enhanced PDF processor to extract individual beat definitions with clear separation
+- Improved document loader to maintain distinct beat definitions during ingestion
+- Added specific filtering for beat types to avoid confusion in ChromaDB queries
+- Re-ingested framework document with properly separated beat definitions
+- Implemented metadata tagging to distinguish between similar beat types
 
-### Remediation Plan
+#### 3. Analysis Quality
+- Refined prompts for each stage of analysis
+- Enhanced LLM context with clearer beat definitions
+- Improved synthesis of results into a structured Flag->Explain->Suggest format
+- Added more specific guidance for each beat type
+- Better integrated setup checks into the final analysis
 
-Based on the UAT findings, a comprehensive remediation plan has been developed and documented in `script_doctor_remediation_plan.md`. The key components include:
-
-#### UI/UX Redesign
-- Replace the dual text area design with a single textarea for the outline
-- Implement direct highlighting within this single text area
-- Add clear instructions and visual feedback for the highlighting process
-- Improve the display of beat selection and analysis results
-
-#### Beat Identification Improvements
-- Refine the Save the Cat framework document processing to better separate adjacent beats
-- Implement beat validation to check if the selected type matches the content
-- Add reference descriptions for each beat type to aid in correct selection
-- Consider basic auto-detection of beats based on content analysis
-
-#### Analysis Quality Enhancements
-- Refine Gemini prompts to be more specific to the selected beat type
-- Improve response format parsing to handle variations in API output
-- Enhance context handling to better reference specific elements from the outline
-- Standardize the Flag-Explain-Suggest format across all beat types
-
-#### Technical Implementation
-The remediation plan includes detailed code examples for:
-- Single text area UI with direct highlighting functionality
-- Improved beat definition retrieval with better specificity
-- Enhanced error handling and response parsing
-- More robust logging for debugging and performance monitoring
-
-The plan is structured into three implementation phases:
-1. Backend Improvements (1-2 days)
-2. UI Redesign (2-3 days)
-3. Testing and Refinement (1-2 days)
-
-Success criteria for the remediation include:
-- Users can paste their outline once and highlight text directly
-- The system correctly identifies and analyzes the selected beat type
-- Feedback is clear, actionable, and directly relevant to the chosen beat
-- No API errors or parsing issues occur during normal operation
-- Previously failed test scenarios pass after implementation of the fixes
-
-## UAT Remediation Implementation
-
-### Phase 1: Backend Improvements
-Based on UAT feedback, several critical backend improvements were implemented:
-
-1. **Enhanced PDF Processing**:
-   - Improved the PDF processor to extract individual beat definitions with clear boundaries
-   - Modified extraction logic to properly separate adjacent beat definitions (e.g., "All Is Lost" vs. "Dark Night of the Soul")
-   - Added improved logging throughout the PDF processing pipeline
-
-2. **Document Loader Refinements**:
-   - Enhanced the document loader to maintain separation between beat definitions during ingestion
-   - Implemented cleaner text chunking with appropriate context preservation
-   - Successfully re-ingested the Save the Cat framework document with 16 extracted beat definitions
-
-3. **RAG Query Process Improvements**:
-   - Updated retriever.py to use more precise queries for specific beat types
-   - Enhanced context handling to better utilize the full outline
-   - Fixed collection name to use "save_the_cat_beats" consistently
-
-4. **Technical Fixes**:
-   - Updated model name to the correct format ('models/gemini-1.5-flash-latest')
-   - Improved error handling throughout the application
-   - Enhanced logging for better debugging and monitoring
-
-### Phase 2: UI Redesign
-The UI was completely redesigned based on UAT feedback:
-
-1. **Single Text Area Implementation**:
-   - Replaced the confusing dual-textarea design with a single text area for outlines
-   - Implemented direct JavaScript text highlighting in the single area
-   - Added proper handling of selected text/range to be passed to the backend
-
-2. **Improved User Guidance**:
-   - Added clear step-by-step instructions above the text area
-   - Implemented tooltips explaining UI elements and their purpose
-   - Created visual confirmation when text is highlighted
-   - Added indication of which beat type is currently selected
-
-3. **Enhanced Visual Feedback**:
-   - Added selection confirmation indicator
-   - Implemented dynamic beat reference section with descriptions
-   - Enhanced error message display for better user understanding
-   - Added form validation to disable the analyze button until all inputs are provided
-
-4. **API Endpoint Enhancements**:
-   - Updated API to work with the new UI design
-   - Improved error handling and response parsing
-   - Added health check endpoint for monitoring
-
-### Phase 3: Testing & Refinement
-The final phase focuses on testing and refinement:
-
-1. **Testing Approach**:
-   - Focused internal testing on specific UAT failure cases
-   - Verification of backend fixes and UI redesign
-   - Further prompt refinement based on integrated testing results
-
-2. **Documentation Updates**:
-   - Updated technical documentation with new implementation details
-   - Maintained progress logs to track development changes
-   - Referenced workplan.md as part of the overall documentation
-
-The remediation plan implementation successfully addressed the critical issues identified during UAT, creating a more intuitive user experience and improving the accuracy of beat definition retrieval and analysis.
-
-## Remediation Implementation
-
-### UAT Issues and Resolution
-Following user acceptance testing, several critical issues were identified and addressed:
-
-1. **UI/UX Problems**
-   - **Issue**: Confusing dual-textarea design causing user friction
-   - **Resolution**: Implemented a single text area design with direct JavaScript-based highlighting
-   - **Improvement**: Added clear instructions, visual feedback, and beat reference information
-
-2. **Beat Definition Retrieval Issues**
-   - **Issue**: Confusion between similar beat types (e.g., "All Is Lost" vs "Dark Night of the Soul")
-   - **Resolution**: Enhanced document loader with improved beat separation, implemented specific filtering
-   - **Improvement**: Successfully separated 16 distinct beat definitions with no cross-contamination
-
-3. **Analysis Quality Issues**
-   - **Issue**: Inconsistent feedback structure and relevance
-   - **Resolution**: Standardized Flag->Explain->Suggest format, improved prompts
-   - **Improvement**: Detailed, beat-specific guidance with actionable suggestions
-
-### Implementation Details
-
-#### Beat Definition Retrieval Enhancement
-The PDF processing was enhanced to extract individual beat definitions more precisely:
-```python
-def _extract_beats_from_text(self, text: str) -> List[Dict[str, str]]:
-    """Extract individual beat definitions from framework document text."""
-    logger.info("Extracting beat definitions from text...")
-    
-    # Clean the text
-    text = self._clean_text(text)
-    
-    # Common beat types from Save the Cat
-    beat_types = [
-        "Opening Image", "Theme Stated", "Setup", "Catalyst", "Debate",
-        "Break Into Two", "B Story", "Fun and Games", "Midpoint",
-        "Bad Guys Close In", "All Is Lost", "Dark Night of the Soul",
-        "Break Into Three", "Finale", "Final Image"
-    ]
-    
-    # Create a regex pattern to find sections that likely contain beat definitions
-    beat_pattern = r'(' + '|'.join(re.escape(beat) for beat in beat_types) + r')\s*[\.\:\-]?\s*(.+?)(?=(' + '|'.join(re.escape(beat) for beat in beat_types) + r')\s*[\.\:\-]|\Z)'
-    
-    # Find all matches using regex
-    matches = re.finditer(beat_pattern, text, re.DOTALL)
-    
-    beat_documents = []
-    for match in matches:
-        beat_type = match.group(1).strip()
-        description = match.group(2).strip()
-        
-        # Clean up the description
-        description = re.sub(r'\s+', ' ', description)
-        
-        # Create a structured document for this beat
-        beat_doc = f"BEAT TYPE: {beat_type}\n\nDEFINITION: {description}\n\nThis is the '{beat_type}' beat according to the Save the Cat screenplay structure framework."
-        
-        beat_documents.append({
-            "type": beat_type,
-            "text": beat_doc
-        })
-        
-        logger.info(f"Extracted beat: {beat_type} ({len(description)} chars)")
-    
-    logger.info(f"Total beats extracted: {len(beat_documents)}")
-    return beat_documents
-```
-
-#### ChromaDB Integration Improvement
-The vector store was updated to handle collection management more effectively:
-```python
-def create_collection(self, name: str, metadata: Dict[str, Any] = None) -> chromadb.Collection:
-    """Create a new collection in the vector store."""
-    # If collection exists, delete it first
-    if self.collection_exists(name):
-        logger.info(f"Collection {name} already exists. Deleting it.")
-        self.delete_collection(name)
-        
-    return self.client.create_collection(name=name, metadata=metadata)
-
-def list_collections(self) -> List[str]:
-    """List all collections in the vector store."""
-    collections = self.client.list_collections()
-    return [collection.name for collection in collections]
-
-def delete_collection(self, name: str) -> None:
-    """Delete a collection from the vector store."""
-    try:
-        self.client.delete_collection(name=name)
-        logger.info(f"Collection {name} deleted successfully")
-    except Exception as e:
-        logger.error(f"Error deleting collection {name}: {str(e)}")
-```
-
-#### Analysis Functionality Update
-The analyzer module was updated to include beat type information in the prompts:
-```python
-def analyze_functional_aspects(outline: str, beat: str, definition: str, beat_type: str) -> str:
-    """Analyze the functional aspects of the beat using Gemini Pro."""
-    prompt = f"""
-    You are a screenplay structure expert specializing in Save the Cat beat structure analysis. 
-    Analyze this beat's functional aspects:
-
-    FULL OUTLINE:
-    {outline}
-
-    DESIGNATED BEAT:
-    {beat}
-
-    SAVE THE CAT DEFINITION FOR {beat_type}:
-    {definition}
-
-    Analyze how well this beat fulfills its structural function as a {beat_type} beat specifically.
-    Consider:
-    1. Does it achieve the expected narrative purpose for a {beat_type} beat?
-    2. Does it create the specific emotional impact required for a {beat_type} beat?
-    3. How well does it connect to the beats that should come before and after a {beat_type} beat?
-    4. How effectively does it serve the overall story structure?
-
-    Provide a detailed analysis focusing on specific strengths and weaknesses of this beat 
-    AS A {beat_type} BEAT ONLY.
-    DO NOT analyze it as any other beat type - focus exclusively on its function as a {beat_type} beat.
-    """
-```
-
-### Validation Results
-
-#### Beat Definition Retrieval Accuracy
-Extensive testing confirmed:
-- Successful retrieval of distinct beat definitions
-- No confusion between similar beat types like "All Is Lost" and "Dark Night of the Soul"
-- Proper metadata handling for beat types
-- Successful filtering by beat type in queries
-
-#### Analysis Quality
-Testing with various screenplay beats showed:
-- Distinct analysis approaches for different beat types
-- Consistent Flag->Explain->Suggest format
-- Specific and actionable suggestions
-- Improved relevance through beat-specific context
-
-#### Technical Implementation
-The remediation addressed several technical issues:
-- Fixed variable reference problems
-- Improved ChromaDB initialization and error handling
+#### 4. Technical Improvements
+- Updated model name to correct format ('models/gemini-1.5-flash-latest')
 - Consolidated collection naming across the codebase
-- Added comprehensive logging for troubleshooting
-- Enhanced frontend with better user experience
+- Fixed variable reference issues in the analyzer component
+- Improved error handling with detailed logging
+- Enhanced the API endpoint with robust validation
 
-### Future Enhancements
-While all critical issues have been addressed, future enhancements could include:
-1. Dedicated "Break Into Three" beat definition (currently found within "Dark Night of the Soul")
-2. Automated beat detection capabilities
-3. Support for additional screenplay frameworks
-4. Enhanced analytics for tracking common screenplay issues
+## UAT Round 2 Results and Enhancement Plan
+
+### UAT Round 2 Summary
+The second round of User Acceptance Testing was successfully completed, validating that all critical issues identified in Round 1 have been resolved. Key improvements that were validated include:
+
+1. **UI/UX Improvements**: The redesigned single text area with direct highlighting received a perfect 10/10 rating from testers, confirming that the UI confusion from Round 1 has been completely resolved.
+
+2. **Beat Definition Accuracy**: The system now correctly distinguishes between similar beat types, particularly "All Is Lost" and "Dark Night of the Soul" which were previously confused. This was achieved through enhanced PDF processing to extract individual beat definitions with clear separation and improved document loading with distinct beat definitions during ingestion.
+
+3. **Analysis Quality**: The Flag->Explain->Suggest format was rated as clear, relevant, and actionable, with testers reporting the analysis quality as "1000% better" than Round 1.
+
+All 8 test cases across 4 test scenarios were successfully executed with positive results, confirming that the application is now ready for broader user testing or limited release.
+
+### Enhancement Opportunities
+Two minor enhancement opportunities were identified during UAT Round 2:
+
+1. **Cross-Beat Analysis Enhancement**: When analyzing a beat's setup issues, the system could be more specific about which previous beats should be modified. For example, when analyzing the All Is Lost beat, it might not reference how the Bad Guys Close In beat failed to set up the necessary context.
+
+2. **Location Specificity in Suggestions**: When suggesting additions or changes, the system sometimes uses general act references (e.g., "Insert scenes through Act Two-A") rather than pointing to specific locations or beat names in the outline.
+
+### Enhancement Implementation Plan
+An enhancement plan has been developed to address these minor issues:
+
+#### 1. Cross-Beat Analysis Enhancement
+- **Enhanced Beat Indexing**: Extend the outline indexing process to tag and categorize each beat section, create a beat relationship map based on the Save the Cat framework, and store beat sequence information as metadata in ChromaDB.
+- **Cross-Reference Prompt Enhancement**: Update the analysis pipeline to include a "beat relationship" step and modify prompts to specifically look for connections between the current beat and earlier beats.
+- **Implementation**: Update `analyzer.py` to include beat relationship analysis, modify the ChromaDB schema, and enhance prompt templates.
+
+#### 2. Location Specificity Enhancement
+- **Beat Name Standardization**: Create a standardized mapping of screenplay sections, acts, and beats, implement a beat position detection algorithm, and associate specific line numbers or paragraph indices with beat names.
+- **Targeted Suggestion Prompt**: Update the suggestion generation prompt to require location specificity, referencing exact beat names rather than general act references.
+- **Implementation**: Update `document_loader.py` to better recognize and map beat sections and enhance the suggestion generation phase in `analyzer.py`.
+
+#### 3. Limited Release Preparation
+- **Documentation Updates**: Create a user guide with simplified instructions, document known limitations and planned improvements, and prepare feedback collection mechanisms.
+- **Deployment Optimization**: Optimize ChromaDB query performance, implement basic caching for repeated analyses, and review error handling.
+- **Feedback Mechanism**: Add a simple feedback form in the UI for user feedback collection.
+
+The implementation timeline spans approximately 3 weeks with a focus on enhancing cross-beat references, improving location specificity, and preparing for limited release. The enhancement plan aims to further improve the specificity and contextual awareness of the analysis without requiring significant architectural changes to the current system.
 
 ## Application Startup
 A startup script (`start.sh`) has been created to simplify the application deployment:
