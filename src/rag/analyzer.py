@@ -39,26 +39,25 @@ def get_beat_definition(beat_type: str, collection) -> str:
 def analyze_functional_aspects(outline: str, beat: str, definition: str, beat_type: str) -> str:
     """Analyze the functional aspects of the beat using Gemini Pro."""
     prompt = f"""
-    You are a screenplay structure expert specializing in Save the Cat beat structure analysis. Analyze this beat's functional aspects:
+You are a screenplay structure expert analyzing a specific beat within the context of the **entire provided outline**.
 
-    FULL OUTLINE:
-    {outline}
+FULL OUTLINE:
+{outline}
 
-    DESIGNATED BEAT:
-    {beat}
+DESIGNATED BEAT ({beat_type}):
+{beat}
 
-    SAVE THE CAT DEFINITION FOR {beat_type}:
-    {definition}
+SAVE THE CAT DEFINITION FOR {beat_type}:
+{definition}
 
-    Analyze how well this beat fulfills its structural function as a {beat_type} beat specifically. Consider:
-    1. Does it achieve the expected narrative purpose for a {beat_type} beat?
-    2. Does it create the specific emotional impact required for a {beat_type} beat?
-    3. How well does it connect to the beats that should come before and after a {beat_type} beat?
-    4. How effectively does it serve the overall story structure?
+Analyze how effectively this DESIGNATED BEAT fulfills its structural function as a {beat_type} beat **considering the complete narrative arc presented in the FULL OUTLINE**. Evaluate:
+1. Alignment with the SAVE THE CAT DEFINITION for a {beat_type} beat.
+2. Connection to preceding plot points and character development **established earlier in the outline**.
+3. Impact on subsequent plot points and the overall trajectory towards the climax **as suggested by later parts of the outline**.
+4. Contribution to the story's central theme(s) **evident throughout the outline**.
 
-    Provide a detailed analysis focusing on specific strengths and weaknesses of this beat AS A {beat_type} BEAT ONLY.
-    DO NOT analyze it as any other beat type - focus exclusively on its function as a {beat_type} beat.
-    """
+Provide a detailed analysis focusing on strengths and weaknesses **within the context of the whole story**. Focus exclusively on its function as a {beat_type} beat.
+"""
     
     try:
         logger.info("Generating functional analysis with Gemini")
@@ -162,31 +161,30 @@ def check_setups(outline: str, beat: str, collection) -> str:
 def synthesize_analysis(functional_analysis: str, setup_analysis: str, beat_type: str) -> Dict[str, Any]:
     """Synthesize the analyses into Flag->Explain->Suggest format."""
     synthesis_prompt = f"""
-    You are an expert screenplay consultant providing actionable feedback on a {beat_type} beat.
-    
-    Synthesize these analyses into a clear, actionable review:
+You are an expert screenplay consultant providing actionable feedback on a {beat_type} beat.
 
-    FUNCTIONAL ANALYSIS:
-    {functional_analysis}
+Synthesize these analyses into a clear, actionable review, **explicitly linking the beat's functional performance (Analysis 1) to its setup/payoff integrity within the full outline (Analysis 2)**:
 
-    SETUP ANALYSIS:
-    {setup_analysis}
+FUNCTIONAL ANALYSIS (considering full outline):
+{functional_analysis}
 
-    Format your response STRICTLY as follows, with EXACTLY these section headers:
+SETUP/PAYOFF ANALYSIS (relative to this beat within the full outline):
+{setup_analysis}
 
-    FLAG: [One clear, specific issue that most needs attention in this {beat_type} beat]
+Format your response STRICTLY as follows, with EXACTLY these section headers:
 
-    EXPLAIN: [Explain why this issue matters, referencing Save the Cat principles for the {beat_type} beat specifically]
+FLAG: [One clear, specific issue that most needs attention in this {beat_type} beat, considering both function and context]
 
-    SUGGEST:
-    - [First specific, actionable suggestion to fix the issue]
-    - [Second specific, actionable suggestion]
-    - [Optional third suggestion if relevant]
+EXPLAIN: [Explain why this issue matters structurally/narratively, referencing Save the Cat principles for the {beat_type} beat AND specific connections/disconnects **within the provided outline**]
 
-    Your response MUST include these EXACT headings (FLAG, EXPLAIN, SUGGEST) followed by relevant content.
-    Keep each section concise, clear and focused on the specific {beat_type} beat.
-    Do not discuss or analyze the beat as if it were any other beat type.
-    """
+SUGGEST:
+- [First specific, actionable suggestion addressing the core issue, potentially referencing **other specific parts of the outline**]
+- [Second specific, actionable suggestion, potentially referencing **other specific parts of the outline**]
+- [Optional third suggestion if relevant]
+
+Your response MUST include these EXACT headings (FLAG, EXPLAIN, SUGGEST) followed by relevant content.
+Ensure the explanation and suggestions clearly demonstrate consideration of the **entire narrative context**. Focus exclusively on the specific {beat_type} beat.
+"""
     
     try:
         logger.info("Generating synthesis with Gemini")
